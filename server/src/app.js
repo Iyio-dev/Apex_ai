@@ -1,1 +1,11 @@
-// TODO: Configure Express middleware and mount /api/v1 routes.
+import express from "express";
+
+const app = express();
+
+app.use(express.json());
+
+app.get("/health", (req, res) => {
+  res.send("Health check passed!");
+});
+
+export default app;
