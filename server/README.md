@@ -35,5 +35,12 @@ Backend scaffold for APEX, an AI-powered student problem-solving application.
 3. Add your MongoDB connection string and a strong JWT secret.
 4. Run `npm run dev`.
 
-The scaffold files are placeholders; application logic will be added and tested incrementally.
+Authentication endpoints currently available:
+- `POST /api/v1/auth/register` — create an account
+- `POST /api/v1/auth/login` — log in
+- `GET /api/v1/auth/me` — return the signed-in user (requires `Authorization: Bearer <token>`)
+- `GET /health` — API health check
+
+Set `MONGODB_URI` and a long, random `JWT_SECRET` in `.env` before starting. Problem workflow and AI integration are still TODOs and will be implemented next.
+
 Never commit `.env` or real API keys.
