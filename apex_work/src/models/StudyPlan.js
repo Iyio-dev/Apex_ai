@@ -1,0 +1,5 @@
+import mongoose from "mongoose";
+const activity=new mongoose.Schema({subject:{type:String,required:true},topic:{type:mongoose.Schema.Types.ObjectId,required:true},title:{type:String,required:true},date:{type:Date,required:true},estimatedMinutes:{type:Number,min:1,required:true},priority:{type:String,enum:["low","medium","high"],default:"medium"},status:{type:String,enum:["scheduled","completed","partial","skipped"],default:"scheduled"},actualMinutes:{type:Number,min:0,default:0},understanding:{type:Number,min:0,max:5,default:0},feedback:{type:String,default:""},personalSubtopics:[{type:String}],personalObjectives:[{type:String}],interestNote:{type:String,default:""}});
+const schema=new mongoose.Schema({user:{type:mongoose.Schema.Types.ObjectId,ref:"User",required:true},name:{type:String,required:true},source:{type:String,enum:["manual","rule-based","ai"],default:"manual"},preferences:{type:mongoose.Schema.Types.Mixed,default:null},activities:[activity]},{timestamps:true});
+schema.index({user:1,createdAt:-1});
+export default mongoose.model("StudyPlan",schema);

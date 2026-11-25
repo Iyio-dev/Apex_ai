@@ -1,0 +1,23 @@
+{
+  "installCommand": "npm ci --prefix client",
+  "buildCommand": "npm run build --prefix client",
+  "outputDirectory": "client/dist",
+  "rewrites": [
+    {
+      "source": "/api/v1/:path*",
+      "destination": "https://apex-api-anjola.onrender.com/api/v1/:path*"
+    },
+    {
+      "source": "/health",
+      "destination": "https://apex-api-anjola.onrender.com/health"
+    },
+    {
+      "source": "/ready",
+      "destination": "https://apex-api-anjola.onrender.com/ready"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

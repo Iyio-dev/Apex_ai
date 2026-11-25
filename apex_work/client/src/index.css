@@ -1,0 +1,83 @@
+@tailwind base;@tailwind components;@tailwind utilities;body{@apply bg-slate-50 text-slate-800 antialiased}button,input,textarea,select{@apply outline-offset-2}button:disabled{@apply opacity-50 cursor-not-allowed}.panel{@apply bg-white border border-slate-200 rounded-2xl shadow-sm p-5}.field{@apply w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100}.btn{@apply inline-flex items-center justify-center rounded-xl px-4 py-2.5 bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition}.btn-secondary{@apply inline-flex items-center justify-center rounded-xl px-4 py-2.5 border border-slate-200 bg-white text-slate-700 font-medium hover:bg-slate-50}.muted{@apply text-sm text-slate-500}.heading{@apply text-2xl font-bold tracking-tight text-slate-900}/* APEX visual system */
+:root{font-family:Inter,ui-sans-serif,system-ui,sans-serif;color-scheme:light}html.dark{color-scheme:dark}body{background:#eaf5ff;color:#183453}.apex-app,.auth-page{position:relative;isolation:isolate;background:linear-gradient(125deg,rgba(231,246,255,.85),rgba(207,232,255,.72)),radial-gradient(ellipse at 15% 15%,#a2d7ff 0,transparent 45%),radial-gradient(ellipse at 85% 70%,#90b7fa 0,transparent 52%);background-attachment:fixed}.apex-app:before,.auth-page:before{content:"";position:fixed;z-index:-1;inset:0;pointer-events:none;background:radial-gradient(ellipse at 20% 30%,rgba(92,181,244,.27),transparent 40%),radial-gradient(ellipse at 85% 85%,rgba(124,160,255,.24),transparent 38%);filter:blur(45px)}.apex-sidebar{background:rgba(240,249,255,.79);border-right:1px solid rgba(125,180,224,.28);color:#365775;backdrop-filter:blur(24px)}.apex-sidebar .text-white{color:#123d65}.apex-header{background:rgba(255,255,255,.58);border-bottom:1px solid rgba(147,197,253,.35);backdrop-filter:blur(22px)}.panel{background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.85);border-radius:22px;box-shadow:0 12px 36px rgba(34,93,147,.09);backdrop-filter:blur(16px)}.field{background:rgba(255,255,255,.9);border-color:#c7def0;color:#163657}.field:focus{border-color:#38a9f5;--tw-ring-color:rgba(56,169,245,.18)}.btn{background:linear-gradient(110deg,#2788dc,#45b8f3);box-shadow:0 6px 18px rgba(39,136,220,.2)}.btn:hover{background:linear-gradient(110deg,#1a74c5,#249fdb)}.btn-secondary{border-color:#c7def0}.auth-wrap{box-shadow:0 28px 85px rgba(30,91,157,.22);border:1px solid rgba(255,255,255,.7)}.auth-intro{background:linear-gradient(150deg,rgba(16,104,189,.91),rgba(69,180,237,.78));color:white;min-height:600px}.auth-card{background:rgba(255,255,255,.87);backdrop-filter:blur(25px)}.theme-switch{display:flex;gap:5px;padding:5px;background:rgba(120,180,225,.12);border-radius:14px}.theme-switch button{flex:1;display:grid;place-items:center;padding:9px;border-radius:10px}.theme-switch .selected,.theme-icon.active{background:rgba(67,167,236,.22);color:#0878c7}.theme-icon{padding:9px;border-radius:10px}.muted{color:#617d98}.heading{color:#153b62}
+html.dark body{background:#0a1426;color:#d8e9fa}html.dark .apex-app,html.dark .auth-page{background:linear-gradient(130deg,rgba(10,20,38,.95),rgba(18,39,68,.94)),radial-gradient(ellipse at 15% 20%,#174d82,transparent 60%)}html.dark .apex-sidebar{background:rgba(11,25,45,.88);border-color:#284767;color:#bdd3e9}html.dark .apex-sidebar .text-white{color:#f1f8ff}html.dark .apex-header,html.dark .panel,html.dark .auth-card{background:rgba(22,41,65,.82);border-color:rgba(106,160,211,.23);color:#e4f2ff}html.dark .field,html.dark .btn-secondary{background:#1c3452;border-color:#3d5d7b;color:#e5f3ff}html.dark .heading,html.dark .text-slate-900{color:#f0f7ff}html.dark .text-slate-800,html.dark .text-slate-700{color:#d8e9fa}html.dark .text-slate-600,html.dark .text-slate-500,html.dark .muted{color:#a6bfd8}html.dark .bg-white,html.dark .bg-slate-50{background-color:#1a304b}html.dark .border-slate-200{border-color:#35516e}html.dark .theme-switch{background:rgba(91,151,205,.14)}html.dark .auth-intro{background:linear-gradient(150deg,#0c477b,#176b9e)}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+/* Public landing page */
+.landing-page{--lp-text:#173958;--lp-muted:#607d99;--lp-surface:rgba(255,255,255,.77);--lp-border:rgba(255,255,255,.85);color:var(--lp-text);background:radial-gradient(ellipse at 12% 10%,rgba(118,198,255,.48),transparent 43%),radial-gradient(ellipse at 92% 44%,rgba(147,182,255,.43),transparent 45%),linear-gradient(135deg,#f3faff,#dfedff 60%,#eef8ff);min-height:100vh}
+.landing-title{color:var(--lp-text)}.landing-subtitle{color:var(--lp-muted)}.landing-accent{color:#248bd6}.landing-eyebrow,.landing-pill{background:rgba(82,166,234,.14);color:#177ac2}.landing-primary{display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(110deg,#2187d5,#40b4ec);color:white;box-shadow:0 8px 20px rgba(37,132,211,.2);transition:transform .2s,box-shadow .2s}.landing-primary:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(37,132,211,.3)}.landing-outline,.landing-preview,.landing-walkthrough,.landing-cta{background:var(--lp-surface);border:1px solid var(--lp-border);box-shadow:0 18px 60px rgba(40,106,169,.08);backdrop-filter:blur(22px)}.landing-outline:hover{background:rgba(126,190,243,.16)}.landing-preview-card,.landing-demo-card{background:rgba(255,255,255,.73);border:1px solid rgba(166,205,238,.35)}.landing-theme{display:flex;gap:2px;padding:4px;background:rgba(120,180,225,.15);border-radius:12px}.landing-theme button{padding:8px;border-radius:9px;color:var(--lp-muted)}.landing-theme button.selected{background:var(--lp-surface);color:#2187d5}.landing-step{color:var(--lp-text);transition:background .2s}.landing-step:hover,.landing-step.active{background:rgba(86,173,236,.13)}.landing-step.active{outline:1px solid rgba(72,159,223,.27)}.landing-step-number{color:#2991d9}.landing-demo-icon{background:rgba(70,170,240,.14);color:#1685d5}.landing-arrow{border:1px solid rgba(115,171,213,.3);border-radius:12px;padding:9px;color:var(--lp-text)}.landing-arrow:hover{background:rgba(100,175,233,.16)}.landing-footer{color:var(--lp-muted);border-top:1px solid rgba(116,172,220,.2)}
+html.dark .landing-page{--lp-text:#eef7ff;--lp-muted:#a8c3dc;--lp-surface:rgba(24,45,72,.78);--lp-border:rgba(119,172,218,.22);background:radial-gradient(ellipse at 12% 10%,rgba(25,102,163,.28),transparent 45%),radial-gradient(ellipse at 90% 45%,rgba(45,76,145,.32),transparent 45%),linear-gradient(130deg,#0a1729,#10243c 65%,#0b1b30)}html.dark .landing-preview-card,html.dark .landing-demo-card{background:rgba(20,41,66,.86);border-color:rgba(115,165,210,.18)}html.dark .landing-eyebrow,html.dark .landing-pill{color:#8ed0ff;background:rgba(82,166,234,.17)}html.dark .landing-accent{color:#77c8ff}html.dark .landing-theme button.selected{color:#8ed0ff}html.dark .landing-step:hover,html.dark .landing-step.active{background:rgba(86,173,236,.15)}
+@media(max-width:450px){.landing-nav{flex-wrap:wrap}.landing-theme button{padding:6px}.landing-login{padding:4px}.landing-nav .landing-primary{padding:9px 10px}}
+/* APEX animated pop-up loader: no external animation dependency */
+.apex-loader-backdrop{display:grid;place-items:center;padding:24px;isolation:isolate;z-index:50}
+.apex-loader-fullscreen{position:fixed;inset:0;background:radial-gradient(circle at 24% 24%,rgba(91,183,255,.35),transparent 45%),linear-gradient(140deg,#eaf7ff,#dceeff 60%,#eef8ff);backdrop-filter:blur(18px)}
+.apex-loader-contained{position:relative;min-height:360px;border-radius:24px;background:rgba(135,192,240,.08)}
+.apex-loader-dialog{width:min(100%,340px);padding:34px 28px 28px;text-align:center;border:1px solid rgba(255,255,255,.86);border-radius:28px;background:rgba(255,255,255,.82);box-shadow:0 26px 80px rgba(36,105,169,.18);backdrop-filter:blur(26px);animation:apex-popup-in .55s cubic-bezier(.2,.8,.2,1) both}
+.apex-loader-orbit{position:relative;display:grid;place-items:center;width:90px;height:90px;margin:0 auto 16px;color:#238ed8}
+.apex-loader-halo{position:absolute;inset:4px;border:2px dashed rgba(47,156,235,.6);border-radius:50%;animation:apex-orbit 5s linear infinite}
+.apex-loader-orbit:before{content:"";position:absolute;inset:15px;border-radius:22px;background:linear-gradient(135deg,#d9f2ff,#b8dcff);transform:rotate(-9deg);animation:apex-float 2.2s ease-in-out infinite}
+.apex-loader-brain{position:relative;z-index:1;animation:apex-pulse 2.2s ease-in-out infinite}
+.apex-loader-spark{position:absolute;right:0;top:3px;color:#39a9ef;animation:apex-spark 1.5s ease-in-out infinite}
+.apex-loader-title{display:block;color:#173f68;font-size:24px;letter-spacing:.06em}.apex-loader-title span{color:#2e9cdd}.apex-loader-message{margin:8px 0 20px;color:#587b99;font-size:14px}
+.apex-loader-progress{height:5px;border-radius:99px;background:#d9eafb;overflow:hidden}.apex-loader-progress span{display:block;width:38%;height:100%;border-radius:99px;background:linear-gradient(90deg,#3ba5e9,#87d8ff);animation:apex-progress 1.5s ease-in-out infinite}
+.apex-loader-foot{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:14px;font-size:12px;color:#7393ae}.apex-loader-spin{animation:apex-orbit 1.2s linear infinite}
+html.dark .apex-loader-fullscreen{background:radial-gradient(circle at 24% 24%,rgba(35,115,183,.24),transparent 45%),linear-gradient(140deg,#09182b,#112a45)}html.dark .apex-loader-contained{background:rgba(18,44,73,.18)}html.dark .apex-loader-dialog{background:rgba(21,42,67,.91);border-color:rgba(112,172,223,.3);box-shadow:0 26px 80px rgba(0,0,0,.28)}html.dark .apex-loader-title{color:#eff8ff}html.dark .apex-loader-message{color:#bad1e6}html.dark .apex-loader-foot{color:#9dbbd5}html.dark .apex-loader-progress{background:#34506d}html.dark .apex-loader-orbit:before{background:linear-gradient(135deg,#164c77,#276b9b)}
+@keyframes apex-popup-in{from{opacity:0;transform:translateY(18px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes apex-orbit{to{transform:rotate(360deg)}}@keyframes apex-float{50%{transform:translateY(-5px) rotate(9deg)}}@keyframes apex-pulse{50%{transform:scale(1.1)}}@keyframes apex-spark{50%{opacity:.4;transform:translateY(-5px) scale(1.25)}}@keyframes apex-progress{0%{transform:translateX(-110%)}100%{transform:translateX(310%)}}
+@media(prefers-reduced-motion:reduce){.apex-loader-dialog,.apex-loader-halo,.apex-loader-orbit:before,.apex-loader-brain,.apex-loader-spark,.apex-loader-progress span,.apex-loader-spin{animation:none!important}.apex-loader-progress span{width:100%}}
+
+/* Refined, brighter APEX workspace */
+.apex-header{background:rgba(250,253,255,.82);box-shadow:0 5px 24px rgba(55,133,190,.05)}
+.apex-sidebar{background:rgba(247,252,255,.88)}
+html.dark body{background:#14243a}html.dark .apex-app,html.dark .auth-page{background:linear-gradient(130deg,rgba(23,43,66,.96),rgba(31,57,83,.94)),radial-gradient(ellipse at 15% 20%,#246b9b,transparent 60%)}html.dark .apex-sidebar{background:rgba(25,48,72,.9)}html.dark .apex-header,html.dark .panel,html.dark .auth-card{background:rgba(34,59,84,.85)}
+
+/* APEX refined chrome and lighter midnight palette */
+.apex-header{padding-top:18px;padding-bottom:18px;box-shadow:0 5px 28px rgba(43,117,181,.055)}
+.apex-header-kicker{display:inline-flex;align-items:center;gap:6px;color:#177ebd;font-size:10px;font-weight:800;letter-spacing:.13em}
+.apex-header-dot{width:5px;height:5px;border-radius:50%;background:#64b6ec}
+.apex-header-title{font-size:clamp(16px,2vw,21px);font-weight:800;letter-spacing:-.045em;color:#20466a;line-height:1.3}
+.apex-header-accent{color:#37a9e7}.apex-avatar{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;font-weight:800;color:#167dbd;background:linear-gradient(140deg,#e7f7ff,#ccecff);border:1px solid #b4e2fa;box-shadow:0 4px 15px rgba(58,151,209,.12)}
+html.dark body{background:#182b40;color:#e3effb}html.dark .apex-app,html.dark .auth-page{background:radial-gradient(ellipse at 15% 10%,rgba(49,115,167,.2),transparent 45%),linear-gradient(130deg,#1b3148,#243e58 65%,#1c344c)}html.dark .apex-sidebar{background:rgba(28,51,74,.88);border-color:#3b617f}html.dark .apex-header,html.dark .panel,html.dark .auth-card{background:rgba(36,65,91,.82);border-color:rgba(132,185,220,.25)}html.dark .field,html.dark .btn-secondary{background:#2c4b69;border-color:#54728e}html.dark .apex-header-title{color:#f0f8ff}html.dark .apex-header-kicker{color:#8bd3ff}html.dark .apex-avatar{background:linear-gradient(130deg,#345d7c,#447b9d);border-color:#5a91b2;color:#e5f7ff}
+.syllabus-predicted{display:inline-block;margin-top:8px;border-radius:999px;background:#d9f1ff;color:#1776b1;padding:4px 10px;font-size:12px;font-weight:700}html.dark .syllabus-predicted{background:#315d7a;color:#b1e5ff}
+.apex-topic-card{border:1px solid #d8eaf6;border-radius:16px;padding:12px;background:rgba(243,250,255,.8)}html.dark .apex-topic-card{background:#294963;border-color:#4d6e87}
+
+.apex-question-text { min-width: 0; max-width: 100%; overflow-wrap: anywhere; line-height: 1.65; }
+.apex-formula { display: inline-block; max-width: 100%; overflow-x: auto; vertical-align: middle; }
+.apex-formula.display { display: block; }
+.apex-formula .katex { font-size: 1.08em; }
+.apex-formula .katex-display { margin: .35em 0; }
+
+/* Quiet learning workspace: clear surfaces, restrained blue accents, less glass. */
+:root{--apex-page:#f4f7fb;--apex-surface:#fff;--apex-border:#e5ebf2;--apex-ink:#1e3449;--apex-muted:#718197;--apex-accent:#347fae;--apex-accent-soft:#edf6fb}
+body{background:var(--apex-page);color:var(--apex-ink)}
+.apex-app,.auth-page{background:var(--apex-page);background-attachment:initial}
+.apex-app:before,.auth-page:before{display:none}
+.apex-sidebar{background:#f9fbfd;border-color:var(--apex-border);backdrop-filter:none;color:#536a80}
+.apex-sidebar .text-white{color:var(--apex-ink)}
+.apex-header{background:var(--apex-surface);border-color:var(--apex-border);box-shadow:0 1px 2px rgba(24,47,70,.03);backdrop-filter:none}
+.panel{background:var(--apex-surface);border:1px solid var(--apex-border);border-radius:18px;box-shadow:0 3px 12px rgba(29,55,79,.035);backdrop-filter:none;padding:20px}
+.heading,.apex-header-title{color:var(--apex-ink)}
+.muted{color:var(--apex-muted)}
+.field{background:#fff;border-color:#d9e2eb;color:#263c50;border-radius:12px}
+.field:focus{border-color:#80b7d6;--tw-ring-color:rgba(52,127,174,.15)}
+.btn{background:var(--apex-accent);border-radius:12px;box-shadow:none}
+.btn:hover{background:#286b94}
+.btn-secondary{background:#fff;border-color:#dbe4ec;color:#43586c;border-radius:12px}
+.btn-secondary:hover{background:#f5f8fb}
+.metric-card{min-height:140px;padding:18px 20px}
+.metric-label{font-size:13px;font-weight:600;color:#728297}
+.metric-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;background:var(--apex-accent-soft);color:var(--apex-accent);flex:none}
+.metric-value{margin-top:18px;font-size:clamp(1.55rem,2.3vw,1.9rem);font-weight:700;letter-spacing:-.04em;line-height:1.1;color:var(--apex-ink);font-variant-numeric:tabular-nums}
+.metric-detail{margin-top:7px;font-size:12px;line-height:1.45;color:var(--apex-muted)}
+.page-heading{align-items:center}
+.apex-topic-card{background:#f8fbfd;border-color:#e5edf3}
+html.dark body{background:#172638;color:#e4edf5}
+html.dark .apex-app,html.dark .auth-page{background:#172638}
+html.dark .apex-sidebar{background:#1b2d40;border-color:#31465b;color:#c4d2df}
+html.dark .apex-sidebar .text-white{color:#e9f1f8}
+html.dark .apex-header,html.dark .panel,html.dark .auth-card{background:#20354a;border-color:#344b61;box-shadow:0 3px 12px rgba(0,0,0,.12)}
+html.dark .heading,html.dark .apex-header-title,html.dark .metric-value,html.dark .text-slate-900{color:#edf4fa}
+html.dark .muted,html.dark .metric-label,html.dark .metric-detail{color:#a7bacb}
+html.dark .field,html.dark .btn-secondary{background:#1a2c3e;border-color:#40576c;color:#e4edf5}
+html.dark .btn-secondary:hover{background:#263e54}
+html.dark .metric-icon{background:#29455c;color:#9ed5f2}
+html.dark .apex-topic-card{background:#1b3044;border-color:#354d62}
+@media(max-width:640px){.panel{padding:16px;border-radius:16px}.metric-card{min-height:128px;padding:16px}.metric-value{margin-top:14px}.page-heading{align-items:flex-start}.apex-header{padding-top:14px;padding-bottom:14px}}

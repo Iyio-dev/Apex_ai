@@ -1,0 +1,1 @@
+export const questionMathFormat = String.raw`In question text, options and explanations, write mathematical expressions as LaTeX inside \( and \). Use \frac for fractions, \sqrt for roots, and braces for multi-character exponents. Keep prose outside the delimiters. Escape each backslash correctly in the JSON string. Use plain text for content that contains no formulas.`;
