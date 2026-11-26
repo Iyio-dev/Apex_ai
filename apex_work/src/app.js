@@ -32,12 +32,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(
-  cors({
-    origin: allowedOrigins,
-    credentials:true,
-  }),
-);
 app.use(express.json({ limit: "1mb" }));
 
 app.get("/health", (req, res) => {
