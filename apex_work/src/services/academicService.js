@@ -1,4 +1,4 @@
-import {findStudentSyllabuses, matchSyllabuses} from "./syllabusLookupService.js";
+import { findStudentSyllabuses, matchSyllabuses } from "./syllabusLookupService.js";
 import mongoose from "mongoose";
 import AcademicProfile from "../models/AcademicProfile.js";
 import Syllabus from "../models/Syllabus.js";
@@ -56,26 +56,26 @@ export const results = async (user, options) => {
   };
 };
 export const stats = async user => {
- const [all, prog, ps, assessments, p] = await Promise.all([
-  Syllabus.find().lean(), TopicProgress.find({ user }).lean(), StudyPlan.find({ user }).lean(),
-  Assessment.find({ user, submittedAt: { $exists: true } }).sort({ submittedAt: -1 }).limit(10).lean(), AcademicProfile.findOne({ user }).lean()
- ]);
- const relevant = p ? matchSyllabuses(all, p) : [];
- return buildLearningStatistics({relevantSyllabuses:relevant,topicProgress:prog,studyPlans:ps,assessments});
+  const [all, prog, ps, assessments, p] = await Promise.all([
+    Syllabus.find().lean(), TopicProgress.find({ user }).lean(), StudyPlan.find({ user }).lean(),
+    Assessment.find({ user, submittedAt: { $exists: true } }).sort({ submittedAt: -1 }).limit(10).lean(), AcademicProfile.findOne({ user }).lean()
+  ]);
+  const relevant = p ? matchSyllabuses(all, p) : [];
+  return buildLearningStatistics({ relevantSyllabuses: relevant, topicProgress: prog, studyPlans: ps, assessments });
 };
 export const dashboard = async user => {
- const today = dayKey();
- const [ps, record, progressStats] = await Promise.all([
-  StudyPlan.find({ user }).sort({ createdAt: -1 }),
-  Assessment.findOne({user,day:today}).select("day score submittedAt generatedQuestions questionIds").lean(),
-  stats(user)
- ]);
- const assessment = record ? {
-  day: record.day,
-  score: record.submittedAt ? record.score : undefined,
-  total: assessmentTotal(record),
-  submitted: !!record.submittedAt
- } : null;
- return { currentPlan: ps[0] || null, todaysActivities: ps.flatMap(p => p.activities.filter(a => dayKey(a.date) === today).map(a => ({ ...a.toObject(), planId: p._id }))), assessment, progress: progressStats };
+  const today = dayKey();
+  const [ps, record, progressStats] = await Promise.all([
+    StudyPlan.find({ user }).sort({ createdAt: -1 }),
+    Assessment.findOne({ user, day: today }).select("day score submittedAt generatedQuestions questionIds").lean(),
+    stats(user)
+  ]);
+  const assessment = record ? {
+    day: record.day,
+    score: record.submittedAt ? record.score : undefined,
+    total: assessmentTotal(record),
+    submitted: !!record.submittedAt
+  } : null;
+  return { currentPlan: ps[0] || null, todaysActivities: ps.flatMap(p => p.activities.filter(a => dayKey(a.date) === today).map(a => ({ ...a.toObject(), planId: p._id }))), assessment, progress: progressStats };
 };
 export const reschedule = async (user, id, activityId, date) => changeActivity(user, id, activityId, { date, status: "scheduled" });

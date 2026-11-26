@@ -17,8 +17,15 @@ app.disable('x-powered-by');
 app.use(requestId);
 app.use(helmet());
 app.use(cookieParser());
-// Only explicitly configured frontend origins may send credentialed requests.
+
 const allowedOrigins = configuredOrigins(process.env.CLIENT_URL, process.env.NODE_ENV);
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials:true,
+  }),
+);
+
 app.use((req, res, next) => {
   if (!isTrustedCookieMutation({
     method: req.method,
