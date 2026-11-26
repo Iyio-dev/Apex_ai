@@ -5,15 +5,15 @@
   "rewrites": [
     {
       "source": "/api/v1/:path*",
-      "destination": "https://apex-api-anjola.onrender.com/api/v1/:path*"
+      "destination": "https://apex-k15z.onrender.com/api/v1/:path*"
     },
     {
       "source": "/health",
-      "destination": "https://apex-api-anjola.onrender.com/health"
+      "destination": "https://apex-k15z.onrender.com/health"
     },
     {
       "source": "/ready",
-      "destination": "https://apex-api-anjola.onrender.com/ready"
+      "destination": "https://apex-k15z.onrender.com/ready"
     },
     {
       "source": "/(.*)",
