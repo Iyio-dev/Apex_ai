@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_URL || "";
+const BASE = "";
 export class ApiError extends Error {
   constructor(message, { status, code, details, requestId, retryAfterSeconds } = {}) {
     super(message);
