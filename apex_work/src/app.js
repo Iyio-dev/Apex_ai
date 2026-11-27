@@ -13,22 +13,12 @@ import notFoundMiddleware from "./middleware/notFoundMiddleware.js";
 import errorMiddleware from "./middleware/errorMiddleware.js";
 
 const app = express();
-if (process.env.NODE_ENV === "production") {
-  app.set("trust proxy", 1);
-}
 app.disable('x-powered-by');
 app.use(requestId);
 app.use(helmet());
 app.use(cookieParser());
-
+// Only explicitly configured frontend origins may send credentialed requests.
 const allowedOrigins = configuredOrigins(process.env.CLIENT_URL, process.env.NODE_ENV);
-app.use(
-  cors({
-    origin: allowedOrigins,
-    credentials:true,
-  }),
-);
-
 app.use((req, res, next) => {
   if (!isTrustedCookieMutation({
     method: req.method,
@@ -42,6 +32,12 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials:true,
+  }),
+);
 app.use(express.json({ limit: "1mb" }));
 
 app.get("/health", (req, res) => {

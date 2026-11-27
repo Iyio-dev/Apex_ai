@@ -23,7 +23,7 @@ export function useAdminController() {
       await api("/academic/admin/access");
       setAllowed(true);
       const [syl, qs] = await Promise.all([
-        api("/academic/syllabuses"),
+        api("/academic/admin/syllabuses"),
         api("/academic/questions?limit=100&offset=0")
       ]);
       setSyllabuses(Array.isArray(syl) ? syl : []);
@@ -53,9 +53,9 @@ export function useAdminController() {
     setSyllabusForm({
       programme: item.programme, subject: item.subject, description: item.description || "",
       topics: (item.topics || []).map(t => ({
-        _id: t._id, name: t.name, description: t.description || "", courseCode: t.courseCode || "",
+        _id: t._id, name: t.name, description: t.description || "", courseCode: t.courseCode || "", courseTitle:t.courseTitle||"",
         difficulty: t.difficulty || "medium", estimatedHours: Number(t.estimatedHours ?? 2), lectureCovered: !!t.lectureCovered, predictedNext: !!t.predictedNext, objectives: t.objectives || [], requiredSkills:t.requiredSkills||[], questionTypes:t.questionTypes||[],
-        subtopics: (t.subtopics || []).map(st => ({ _id: st._id, name: st.name, description: st.description || "" }))
+        subtopics: (t.subtopics || []).map(st => ({ _id: st._id, name: st.name, description: st.description || "", objectives:st.objectives||[] }))
       }))
     });
     setEditingSyllabus(item._id); setTab("syllabus-editor"); setError(""); setSuccess("");
@@ -76,7 +76,7 @@ export function useAdminController() {
           objectives: (t.objectives || []).map(x=>x.trim()).filter(Boolean),
           requiredSkills: (t.requiredSkills || []).map(x=>x.trim()).filter(Boolean),
           questionTypes: (t.questionTypes || []).map(x=>x.trim()).filter(Boolean),
-          subtopics: t.subtopics || []
+          subtopics: (t.subtopics || []).map(st=>({...st,objectives:(st.objectives||[]).map(x=>x.trim()).filter(Boolean)}))
         }))
       };
       if (editingSyllabus) await api(`/academic/syllabuses/${editingSyllabus}`, { method: "PATCH", body });

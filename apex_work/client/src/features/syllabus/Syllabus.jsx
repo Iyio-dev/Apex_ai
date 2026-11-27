@@ -35,7 +35,7 @@ export function Syllabus() {
     <>
       <Header
         title="Your syllabus"
-        subtitle="Lecture coverage and understanding are tracked independently."
+        subtitle="Only lecturer-covered topics from your selected subjects are shown."
         action={
           <select
             className="field w-auto"
@@ -43,7 +43,7 @@ export function Syllabus() {
             onChange={(e) => setSelected(e.target.value)}
           >
             <option>All</option>
-            {subjects.map((s) => (
+            {[...new Set(records.map(r => r.subject))].map((s) => (
               <option key={s}>{s}</option>
             ))}
           </select>
@@ -65,15 +65,16 @@ export function Syllabus() {
             <section className="mb-6" key={s._id}>
               <h3 className="font-bold text-xl mb-3">{s.subject}</h3>
               <div className="space-y-5">
-                {["001", "002", "003", "004", "Uncategorized"].map(course => {
+                {["001", "002", "003", "004"].map(course => {
                   const group = (s.topics || []).filter(t => {
                     const code = String(t.courseCode || t.course || "").toUpperCase();
-                    const match = code.match(/(?:^|\D)00([1-4])(?:\D|$)/);
-                    return course === "Uncategorized" ? !match : match?.[1] === course.slice(-1);
+                    const match = code.match(/(?:^|\D)(?:00|O|0)([1-4])(?:\D|$)/);
+                    return t.lectureCovered === true && match?.[1] === course.slice(-1);
                   });
-                  if (!group.length) return null;
+                  
                   return <div key={course} className="space-y-3">
-                    <h4 className="font-bold text-lg">{course === "Uncategorized" ? "Topics awaiting course classification" : `${s.subject} ${course}`}</h4>
+                    <h4 className="font-bold text-lg">{`O${course.slice(-1)}`}</h4>
+                    {!group.length && <p className="muted">No lecturer-covered topics yet.</p>}
                     {group.map((t) => {
                   const x = map.get(String(t._id));
                   return (
@@ -82,17 +83,15 @@ export function Syllabus() {
                       className="panel flex flex-wrap justify-between gap-4"
                     >
                       <div className="flex-1 min-w-48">
-                        <h4 className="font-semibold">{t.name}</h4>
+                        <h4 className="font-semibold">{t.name}</h4>{t.courseTitle && <p className="muted">{t.courseCode} · {t.courseTitle}</p>}
                         <p className="muted">
                           {t.description ||
                             `${t.difficulty || "medium"} difficulty · ${t.estimatedHours ?? 1} estimated hours`}
                         </p>
-                        {t.objectives?.length > 0 && <p className="muted mt-2">Objectives: {t.objectives.join(" · ")}</p>}
+                        {t.objectives?.length > 0 && <details className="mt-3" open><summary className="font-semibold">By the end of this topic, you should be able to:</summary><ul className="list-disc pl-5 mt-2">{t.objectives.map((o,i)=><li key={i}>{o}</li>)}</ul></details>}
                         {t.predictedNext && <span className="syllabus-predicted">Upcoming · study ahead</span>}
                         {t.subtopics?.length > 0 && (
-                          <p className="muted mt-2">
-                            {t.subtopics.map((x) => x.name).join(" · ")}
-                          </p>
+                          <div className="mt-3 space-y-2">{t.subtopics.map((x,i)=><details key={x._id||i}><summary>{x.name}</summary><ul className="list-disc pl-5">{(x.objectives||[]).map((o,j)=><li key={j}>{o}</li>)}</ul></details>)}</div>
                         )}
                       </div>
                       <div className="flex flex-wrap gap-4 items-center">

@@ -7,7 +7,6 @@ import { api, errorText } from "../../api";
 import { useLoad } from "../../hooks/useLoad";
 import { Header } from "../../components/ui/Header";
 import { Notice } from "../../components/ui/Notice";
-import { cls } from "../../lib/format";
 export function Assessment() {
   const { data, error, loading, refresh } = useLoad(
       "/academic/assessments/daily",

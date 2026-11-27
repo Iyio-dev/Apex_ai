@@ -1,3 +1,4 @@
+import {studentScope,requireTopic} from "./studentScope.js";
 import {questionMathFormat} from "./questionMathFormat.js";
 import {providerFailureKind,rateLimitError} from '../utils/aiFailure.js';
 import Groq from "groq-sdk";
@@ -65,7 +66,8 @@ async function revisionContext(user,plan){
  }
  for(const p of progress){if(p.lectureCovered||p.understanding>0)add(p.topic,p.understanding<=2?5:3);}
  // A topic present in a plan is not automatically proof that it was studied.
- const ids=[...ranked].sort((a,b)=>b[1]-a[1]).slice(0,8).map(([id])=>id);
+ const scope=await studentScope(user);
+ const ids=[...ranked].filter(([id])=>scope.topics.has(id)).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([id])=>id);
  const syllabus=await Syllabus.find({"topics._id":{$in:ids}}).lean();
  const context=[];
  for(const id of ids){for(const s of syllabus){const t=s.topics.find(t=>String(t._id)===id);if(t){context.push({topicId:id,subject:s.subject,topic:t.name,description:t.description,objectives:t.objectives||[],requiredSkills:t.requiredSkills||[],questionTypes:t.questionTypes||[],subtopics:(t.subtopics||[]).map(x=>x.name)});break;}}}
@@ -81,6 +83,8 @@ export async function createPractice(user,{planId,activityId,mode},requestId){
   if(!activity)throw new AppError("Study activity not found",404);
   context=await topicContext([activity]);
  }else context=await revisionContext(user,plan);
+ const scope=await studentScope(user);
+ context=context.filter(t=>scope.topics.get(t.topicId)===t.subject);
  if(!context.length)throw new AppError(mode==="revision"?"No previously studied topics found. Mark lecture coverage or complete a topic first.":"No matching syllabus topic found",409,"NO_REVIEW_TOPICS");
  if(!process.env.GROQ_API_KEY)throw new AppError("AI assessment service is not configured",503,"AI_NOT_CONFIGURED");
  const profile=await AcademicProfile.findOne({user}).lean();
@@ -99,7 +103,7 @@ export async function createPractice(user,{planId,activityId,mode},requestId){
     model,temperature:0.15,max_completion_tokens:5000,
     ...(model.startsWith("openai/gpt-oss-")?{include_reasoning:false}:{}),
     response_format:{type:"json_object"},
-    messages:[{role:"system",content:`You write personalized OAU JUPEB Mathematics, Physics, Chemistry and Biology multiple-choice assessments. Output a single JSON object with a questions array containing exactly ${missing} questions. Each question MUST contain text, options (array of exactly four DISTINCT nonempty strings), correctIndex (integer 0 to 3), explanation (nonempty), objective (string). Do not include markdown. Use ONLY supplied syllabus topics. When several topics are supplied, include the exact matching topicId on each question. In revision mode, distribute questions across prior topics and focus on weak understanding, but do not invent topics. Ensure exactly one correct answer per question. Do not repeat questions. Keep answers hidden in the UI until submission. ${questionMathFormat}`},
+    messages:[{role:"system",content:`You write personalized OAU JUPEB multiple-choice assessments. Output a single JSON object with a questions array containing exactly ${missing} questions. Each question MUST contain text, options (array of exactly four DISTINCT nonempty strings), correctIndex (integer 0 to 3), explanation (nonempty), objective (string). Do not include markdown. Use ONLY supplied syllabus topics. When several topics are supplied, include the exact matching topicId on each question. In revision mode, distribute questions across prior topics and focus on weak understanding, but do not invent topics. Ensure exactly one correct answer per question. Do not repeat questions. Keep answers hidden in the UI until submission. ${questionMathFormat}`},
      {role:"user",content:JSON.stringify({mode,requiredCount:missing,avoidRepeating:questions.map(q=>q.text),profile:{programme:profile?.programme,subjects:profile?.subjects,goal:profile?.goal,strengths:profile?.strengths,weaknesses:profile?.weaknesses},priorTopicProgress:progress.map(p=>({topicId:String(p.topic),understanding:p.understanding,lectureCovered:p.lectureCovered})),syllabusTopics:context,previousFailure:attempt?"Previous response did not satisfy the exact JSON question schema; ensure all fields and unique questions.":undefined})}]
    });
    stage="question_format";
@@ -119,6 +123,8 @@ export async function createPractice(user,{planId,activityId,mode},requestId){
 export async function submitPractice(user,id,answers){
  const a=await AIPractice.findOne({_id:id,user});
  if(!a)throw new AppError("Assessment not found",404);
+ const scope=await studentScope(user);
+ for(const q of a.questions)requireTopic(scope,q.topicId);
  if(a.submittedAt)throw new AppError("Assessment already submitted",409);
  const score=grade(a.questions,answers);
  // Compare-and-set prevents two simultaneous requests from overwriting the same attempt.
@@ -130,4 +136,4 @@ export async function submitPractice(user,id,answers){
  if(!saved)throw new AppError("Assessment already submitted",409);
  return {score,total:a.questions.length,percentage:Math.round(score/a.questions.length*100),review:a.questions.map((q,i)=>({text:q.text,selectedIndex:answers[i],correctIndex:q.correctIndex,correct:answers[i]===q.correctIndex,explanation:q.explanation,objective:q.objective}))};
 }
-export async function practiceHistory(user,planId){await planFor(user,planId);const attempts=await AIPractice.find({user,plan:planId}).sort({createdAt:-1}).limit(20);return attempts.map(a=>({id:a._id,mode:a.mode,score:a.score,total:a.questions.length,submittedAt:a.submittedAt,createdAt:a.createdAt}));}
+export async function practiceHistory(user,planId){await planFor(user,planId);const attempts=await AIPractice.find({user,plan:planId}).sort({createdAt:-1}).limit(20);const scope=await studentScope(user);return attempts.filter(a=>a.questions.every(q=>scope.topics.has(String(q.topicId)))).map(a=>({id:a._id,mode:a.mode,score:a.score,total:a.questions.length,submittedAt:a.submittedAt,createdAt:a.createdAt}));}

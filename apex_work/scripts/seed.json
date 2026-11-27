@@ -1,0 +1,3655 @@
+[
+  {
+    "programme": "JUPEB",
+    "subject": "Mathematics",
+    "description": "JUPEB 2027–2031; SCI-J154",
+    "topics": [
+      {
+        "name": "Set Theory",
+        "description": "Advanced Pure Mathematics",
+        "courseCode": "MAT 001",
+        "courseTitle": "Advanced Pure Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Solve union, intersection, complement and Cartesian product problems using set laws and Venn diagrams."
+        ],
+        "subtopics": [
+          {
+            "name": "Set operations",
+            "description": "Solve union, intersection, complement and Cartesian product problems using set laws and Venn diagrams.",
+            "objectives": [
+              "Solve union, intersection, complement and Cartesian product problems using set laws and Venn diagrams."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Real Numbers",
+        "description": "Advanced Pure Mathematics",
+        "courseCode": "MAT 001",
+        "courseTitle": "Advanced Pure Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify real numbers, prove results by induction, solve AP, GP and HP problems, test GP convergence and find identity and inverse elements."
+        ],
+        "subtopics": [
+          {
+            "name": "Operations with real numbers",
+            "description": "Classify real numbers, prove results by induction, solve AP, GP and HP problems, test GP convergence and find identity and inverse elements.",
+            "objectives": [
+              "Classify real numbers, prove results by induction, solve AP, GP and HP problems, test GP convergence and find identity and inverse elements."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Algebra",
+        "description": "Advanced Pure Mathematics",
+        "courseCode": "MAT 001",
+        "courseTitle": "Advanced Pure Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Determine domain, range, injectivity, surjectivity and inverse and composite functions.",
+          "Solve equations by elimination, substitution and graphs.",
+          "Find roots by completing the square and use discriminants and root-coefficient relations.",
+          "Apply factor and remainder theorems to cubics and resolve partial fractions.",
+          "Expand expressions using Pascal's triangle and obtain linear approximations.",
+          "Apply index and logarithm laws and change of base.",
+          "Calculate determinants and inverses up to order three and solve systems using inverses and Cramer's rule.",
+          "Solve linear, quadratic and absolute-value inequalities and represent intervals graphically."
+        ],
+        "subtopics": [
+          {
+            "name": "Mappings",
+            "description": "Determine domain, range, injectivity, surjectivity and inverse and composite functions.",
+            "objectives": [
+              "Determine domain, range, injectivity, surjectivity and inverse and composite functions."
+            ]
+          },
+          {
+            "name": "Simultaneous equations",
+            "description": "Solve equations by elimination, substitution and graphs.",
+            "objectives": [
+              "Solve equations by elimination, substitution and graphs."
+            ]
+          },
+          {
+            "name": "Quadratic equations",
+            "description": "Find roots by completing the square and use discriminants and root-coefficient relations.",
+            "objectives": [
+              "Find roots by completing the square and use discriminants and root-coefficient relations."
+            ]
+          },
+          {
+            "name": "Polynomials",
+            "description": "Apply factor and remainder theorems to cubics and resolve partial fractions.",
+            "objectives": [
+              "Apply factor and remainder theorems to cubics and resolve partial fractions."
+            ]
+          },
+          {
+            "name": "Binomial theorem",
+            "description": "Expand expressions using Pascal's triangle and obtain linear approximations.",
+            "objectives": [
+              "Expand expressions using Pascal's triangle and obtain linear approximations."
+            ]
+          },
+          {
+            "name": "Logarithms",
+            "description": "Apply index and logarithm laws and change of base.",
+            "objectives": [
+              "Apply index and logarithm laws and change of base."
+            ]
+          },
+          {
+            "name": "Matrices",
+            "description": "Calculate determinants and inverses up to order three and solve systems using inverses and Cramer's rule.",
+            "objectives": [
+              "Calculate determinants and inverses up to order three and solve systems using inverses and Cramer's rule."
+            ]
+          },
+          {
+            "name": "Inequalities",
+            "description": "Solve linear, quadratic and absolute-value inequalities and represent intervals graphically.",
+            "objectives": [
+              "Solve linear, quadratic and absolute-value inequalities and represent intervals graphically."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Trigonometry",
+        "description": "Advanced Pure Mathematics",
+        "courseCode": "MAT 001",
+        "courseTitle": "Advanced Pure Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Convert radians and degrees, sketch trigonometric graphs, apply identities and solve equations involving direct and inverse functions."
+        ],
+        "subtopics": [
+          {
+            "name": "Trigonometric functions",
+            "description": "Convert radians and degrees, sketch trigonometric graphs, apply identities and solve equations involving direct and inverse functions.",
+            "objectives": [
+              "Convert radians and degrees, sketch trigonometric graphs, apply identities and solve equations involving direct and inverse functions."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Complex Numbers",
+        "description": "Advanced Pure Mathematics",
+        "courseCode": "MAT 001",
+        "courseTitle": "Advanced Pure Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Perform complex arithmetic, plot Argand diagrams, convert to polar form, prove and apply De Moivre's theorem and solve roots of unity and loci problems."
+        ],
+        "subtopics": [
+          {
+            "name": "Complex numbers",
+            "description": "Perform complex arithmetic, plot Argand diagrams, convert to polar form, prove and apply De Moivre's theorem and solve roots of unity and loci problems.",
+            "objectives": [
+              "Perform complex arithmetic, plot Argand diagrams, convert to polar form, prove and apply De Moivre's theorem and solve roots of unity and loci problems."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Functions",
+        "description": "Calculus",
+        "courseCode": "MAT 002",
+        "courseTitle": "Calculus",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify elementary functions, determine inverses and sketch graphs.",
+          "Evaluate limits including L’Hospital’s rule and determine continuity."
+        ],
+        "subtopics": [
+          {
+            "name": "Functions",
+            "description": "Classify elementary functions, determine inverses and sketch graphs.",
+            "objectives": [
+              "Classify elementary functions, determine inverses and sketch graphs."
+            ]
+          },
+          {
+            "name": "Limits and continuity",
+            "description": "Evaluate limits including L’Hospital’s rule and determine continuity.",
+            "objectives": [
+              "Evaluate limits including L’Hospital’s rule and determine continuity."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Differential Calculus",
+        "description": "Calculus",
+        "courseCode": "MAT 002",
+        "courseTitle": "Calculus",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Differentiate from first principles and apply product, quotient, chain, implicit, parametric, higher-order and two-variable partial differentiation.",
+          "Find tangents, normals, extrema, rates, asymptotes and Taylor and Maclaurin expansions; solve rectilinear motion problems."
+        ],
+        "subtopics": [
+          {
+            "name": "Differentiation",
+            "description": "Differentiate from first principles and apply product, quotient, chain, implicit, parametric, higher-order and two-variable partial differentiation.",
+            "objectives": [
+              "Differentiate from first principles and apply product, quotient, chain, implicit, parametric, higher-order and two-variable partial differentiation."
+            ]
+          },
+          {
+            "name": "Applications of differentiation",
+            "description": "Find tangents, normals, extrema, rates, asymptotes and Taylor and Maclaurin expansions; solve rectilinear motion problems.",
+            "objectives": [
+              "Find tangents, normals, extrema, rates, asymptotes and Taylor and Maclaurin expansions; solve rectilinear motion problems."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Integral Calculus",
+        "description": "Calculus",
+        "courseCode": "MAT 002",
+        "courseTitle": "Calculus",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Evaluate definite and indefinite integrals using substitution, parts, partial fractions, inverse trigonometric forms and reduction formulae.",
+          "Calculate areas and volumes and approximate integrals using trapezoidal and Simpson rules."
+        ],
+        "subtopics": [
+          {
+            "name": "Integration",
+            "description": "Evaluate definite and indefinite integrals using substitution, parts, partial fractions, inverse trigonometric forms and reduction formulae.",
+            "objectives": [
+              "Evaluate definite and indefinite integrals using substitution, parts, partial fractions, inverse trigonometric forms and reduction formulae."
+            ]
+          },
+          {
+            "name": "Applications of integration",
+            "description": "Calculate areas and volumes and approximate integrals using trapezoidal and Simpson rules.",
+            "objectives": [
+              "Calculate areas and volumes and approximate integrals using trapezoidal and Simpson rules."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ordinary Differential Equations",
+        "description": "Calculus",
+        "courseCode": "MAT 002",
+        "courseTitle": "Calculus",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify equations and solve separable, homogeneous, linear and Bernoulli equations with initial conditions.",
+          "Model geometric and exponential growth and decay."
+        ],
+        "subtopics": [
+          {
+            "name": "First-order equations",
+            "description": "Classify equations and solve separable, homogeneous, linear and Bernoulli equations with initial conditions.",
+            "objectives": [
+              "Classify equations and solve separable, homogeneous, linear and Bernoulli equations with initial conditions."
+            ]
+          },
+          {
+            "name": "Applications",
+            "description": "Model geometric and exponential growth and decay.",
+            "objectives": [
+              "Model geometric and exponential growth and decay."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Introduction to Statistics",
+        "description": "Statistics",
+        "courseCode": "MAT 003",
+        "courseTitle": "Statistics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish populations and samples and construct frequency tables, histograms, bar charts, pie charts, stem-and-leaf displays, box plots, polygons and ogives."
+        ],
+        "subtopics": [
+          {
+            "name": "Description of data sets",
+            "description": "Distinguish populations and samples and construct frequency tables, histograms, bar charts, pie charts, stem-and-leaf displays, box plots, polygons and ogives.",
+            "objectives": [
+              "Distinguish populations and samples and construct frequency tables, histograms, bar charts, pie charts, stem-and-leaf displays, box plots, polygons and ogives."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Different Measures",
+        "description": "Statistics",
+        "courseCode": "MAT 003",
+        "courseTitle": "Statistics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate mean, median, mode, quartiles, percentiles, mean deviation, variance, standard deviation, IQR, coefficient of variation, skewness, kurtosis, rates, ratios and index numbers."
+        ],
+        "subtopics": [
+          {
+            "name": "Location and dispersion",
+            "description": "Calculate mean, median, mode, quartiles, percentiles, mean deviation, variance, standard deviation, IQR, coefficient of variation, skewness, kurtosis, rates, ratios and index numbers.",
+            "objectives": [
+              "Calculate mean, median, mode, quartiles, percentiles, mean deviation, variance, standard deviation, IQR, coefficient of variation, skewness, kurtosis, rates, ratios and index numbers."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Combinatorics",
+        "description": "Statistics",
+        "courseCode": "MAT 003",
+        "courseTitle": "Statistics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate permutations, combinations and probabilities of union, mutually exclusive, independent and conditional events using Venn diagrams."
+        ],
+        "subtopics": [
+          {
+            "name": "Counting and probability",
+            "description": "Calculate permutations, combinations and probabilities of union, mutually exclusive, independent and conditional events using Venn diagrams.",
+            "objectives": [
+              "Calculate permutations, combinations and probabilities of union, mutually exclusive, independent and conditional events using Venn diagrams."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Random Variables",
+        "description": "Statistics",
+        "courseCode": "MAT 003",
+        "courseTitle": "Statistics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish discrete and continuous variables and evaluate PMFs, PDFs and CDFs.",
+          "Calculate means and variances from tables and for Bernoulli, binomial, geometric and Poisson distributions; use distribution tables."
+        ],
+        "subtopics": [
+          {
+            "name": "Probability distributions",
+            "description": "Distinguish discrete and continuous variables and evaluate PMFs, PDFs and CDFs.",
+            "objectives": [
+              "Distinguish discrete and continuous variables and evaluate PMFs, PDFs and CDFs."
+            ]
+          },
+          {
+            "name": "Expectation and variance",
+            "description": "Calculate means and variances from tables and for Bernoulli, binomial, geometric and Poisson distributions; use distribution tables.",
+            "objectives": [
+              "Calculate means and variances from tables and for Bernoulli, binomial, geometric and Poisson distributions; use distribution tables."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Normal Random Variables",
+        "description": "Statistics",
+        "courseCode": "MAT 003",
+        "courseTitle": "Statistics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Standardize observations and calculate probabilities using normal tables.",
+          "State hypotheses, identify testing errors and perform normal, t and chi-square tests for means, proportions, goodness of fit and contingency tables."
+        ],
+        "subtopics": [
+          {
+            "name": "Normal distribution",
+            "description": "Standardize observations and calculate probabilities using normal tables.",
+            "objectives": [
+              "Standardize observations and calculate probabilities using normal tables."
+            ]
+          },
+          {
+            "name": "Significance testing",
+            "description": "State hypotheses, identify testing errors and perform normal, t and chi-square tests for means, proportions, goodness of fit and contingency tables.",
+            "objectives": [
+              "State hypotheses, identify testing errors and perform normal, t and chi-square tests for means, proportions, goodness of fit and contingency tables."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Correlation and Simple Regression",
+        "description": "Statistics",
+        "courseCode": "MAT 003",
+        "courseTitle": "Statistics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate Pearson and Spearman coefficients and fit and interpret a simple linear regression."
+        ],
+        "subtopics": [
+          {
+            "name": "Correlation and regression",
+            "description": "Calculate Pearson and Spearman coefficients and fit and interpret a simple linear regression.",
+            "objectives": [
+              "Calculate Pearson and Spearman coefficients and fit and interpret a simple linear regression."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Basic Sampling Techniques",
+        "description": "Statistics",
+        "courseCode": "MAT 003",
+        "courseTitle": "Statistics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish sampling techniques and finite and infinite populations."
+        ],
+        "subtopics": [
+          {
+            "name": "Sampling",
+            "description": "Distinguish sampling techniques and finite and infinite populations.",
+            "objectives": [
+              "Distinguish sampling techniques and finite and infinite populations."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Coordinate Geometry",
+        "description": "Applied Mathematics",
+        "courseCode": "MAT 004A",
+        "courseTitle": "Applied Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate distances, gradients, midpoints and equations of parallel and perpendicular lines.",
+          "Identify circles, parabolas, ellipses and hyperbolas and calculate tangents and normals."
+        ],
+        "subtopics": [
+          {
+            "name": "Straight line",
+            "description": "Calculate distances, gradients, midpoints and equations of parallel and perpendicular lines.",
+            "objectives": [
+              "Calculate distances, gradients, midpoints and equations of parallel and perpendicular lines."
+            ]
+          },
+          {
+            "name": "Conic sections",
+            "description": "Identify circles, parabolas, ellipses and hyperbolas and calculate tangents and normals.",
+            "objectives": [
+              "Identify circles, parabolas, ellipses and hyperbolas and calculate tangents and normals."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vectors",
+        "description": "Applied Mathematics",
+        "courseCode": "MAT 004A",
+        "courseTitle": "Applied Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Represent vectors, calculate sums, scalar products, angles and test collinearity and perpendicularity.",
+          "Find vector equations of lines and planes in three dimensions.",
+          "Differentiate vector functions up to order three and integrate vector functions."
+        ],
+        "subtopics": [
+          {
+            "name": "Vector algebra",
+            "description": "Represent vectors, calculate sums, scalar products, angles and test collinearity and perpendicularity.",
+            "objectives": [
+              "Represent vectors, calculate sums, scalar products, angles and test collinearity and perpendicularity."
+            ]
+          },
+          {
+            "name": "Vector equations",
+            "description": "Find vector equations of lines and planes in three dimensions.",
+            "objectives": [
+              "Find vector equations of lines and planes in three dimensions."
+            ]
+          },
+          {
+            "name": "Vector functions",
+            "description": "Differentiate vector functions up to order three and integrate vector functions.",
+            "objectives": [
+              "Differentiate vector functions up to order three and integrate vector functions."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kinematics of Motion in a Straight Line",
+        "description": "Applied Mathematics",
+        "courseCode": "MAT 004A",
+        "courseTitle": "Applied Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate displacement, speed, velocity and acceleration from equations and graphs including motion under gravity.",
+          "Resolve velocity and acceleration and calculate relative velocity and path."
+        ],
+        "subtopics": [
+          {
+            "name": "Rectilinear motion",
+            "description": "Calculate displacement, speed, velocity and acceleration from equations and graphs including motion under gravity.",
+            "objectives": [
+              "Calculate displacement, speed, velocity and acceleration from equations and graphs including motion under gravity."
+            ]
+          },
+          {
+            "name": "Motion in a plane",
+            "description": "Resolve velocity and acceleration and calculate relative velocity and path.",
+            "objectives": [
+              "Resolve velocity and acceleration and calculate relative velocity and path."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Newtonian Mechanics",
+        "description": "Applied Mathematics",
+        "courseCode": "MAT 004A",
+        "courseTitle": "Applied Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate work, energy and power.",
+          "Apply Newton's laws and momentum to connected particles and inclined planes."
+        ],
+        "subtopics": [
+          {
+            "name": "Work and energy",
+            "description": "Calculate work, energy and power.",
+            "objectives": [
+              "Calculate work, energy and power."
+            ]
+          },
+          {
+            "name": "Force and motion",
+            "description": "Apply Newton's laws and momentum to connected particles and inclined planes.",
+            "objectives": [
+              "Apply Newton's laws and momentum to connected particles and inclined planes."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forces and Equilibrium",
+        "description": "Applied Mathematics",
+        "courseCode": "MAT 004A",
+        "courseTitle": "Applied Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate moments, couples and reactions for rigid bodies in equilibrium."
+        ],
+        "subtopics": [
+          {
+            "name": "Statics",
+            "description": "Calculate moments, couples and reactions for rigid bodies in equilibrium.",
+            "objectives": [
+              "Calculate moments, couples and reactions for rigid bodies in equilibrium."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mathematics of Finance",
+        "description": "Applied Business Mathematics",
+        "courseCode": "MAT 004B",
+        "courseTitle": "Applied Business Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate simple, compound and continuous interest, payback, NPV, IRR and future values.",
+          "Calculate ordinary, deferred and due annuities and level and growing perpetuities.",
+          "Calculate fund values and construct loan amortization schedules.",
+          "Apply average cost, FIFO, LIFO and lower-of-cost-or-market valuation and calculate turnover."
+        ],
+        "subtopics": [
+          {
+            "name": "Interest",
+            "description": "Calculate simple, compound and continuous interest, payback, NPV, IRR and future values.",
+            "objectives": [
+              "Calculate simple, compound and continuous interest, payback, NPV, IRR and future values."
+            ]
+          },
+          {
+            "name": "Annuities and perpetuities",
+            "description": "Calculate ordinary, deferred and due annuities and level and growing perpetuities.",
+            "objectives": [
+              "Calculate ordinary, deferred and due annuities and level and growing perpetuities."
+            ]
+          },
+          {
+            "name": "Sinking funds and amortization",
+            "description": "Calculate fund values and construct loan amortization schedules.",
+            "objectives": [
+              "Calculate fund values and construct loan amortization schedules."
+            ]
+          },
+          {
+            "name": "Inventory and turnover",
+            "description": "Apply average cost, FIFO, LIFO and lower-of-cost-or-market valuation and calculate turnover.",
+            "objectives": [
+              "Apply average cost, FIFO, LIFO and lower-of-cost-or-market valuation and calculate turnover."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Application of Differential Calculus to Business",
+        "description": "Applied Business Mathematics",
+        "courseCode": "MAT 004B",
+        "courseTitle": "Applied Business Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate marginal productivity, profit, cost, revenue and demand and price, income and cross-price elasticities."
+        ],
+        "subtopics": [
+          {
+            "name": "Marginal concepts",
+            "description": "Calculate marginal productivity, profit, cost, revenue and demand and price, income and cross-price elasticities.",
+            "objectives": [
+              "Calculate marginal productivity, profit, cost, revenue and demand and price, income and cross-price elasticities."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Application of Integral Calculus to Business",
+        "description": "Applied Business Mathematics",
+        "courseCode": "MAT 004B",
+        "courseTitle": "Applied Business Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate total and average cost and revenue and break-even points.",
+          "Find market equilibrium, marginal propensities and surplus using integration.",
+          "Solve business growth and decay problems."
+        ],
+        "subtopics": [
+          {
+            "name": "Production and cost functions",
+            "description": "Calculate total and average cost and revenue and break-even points.",
+            "objectives": [
+              "Calculate total and average cost and revenue and break-even points."
+            ]
+          },
+          {
+            "name": "Consumer and producer surplus",
+            "description": "Find market equilibrium, marginal propensities and surplus using integration.",
+            "objectives": [
+              "Find market equilibrium, marginal propensities and surplus using integration."
+            ]
+          },
+          {
+            "name": "Applications",
+            "description": "Solve business growth and decay problems.",
+            "objectives": [
+              "Solve business growth and decay problems."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Optimization",
+        "description": "Applied Business Mathematics",
+        "courseCode": "MAT 004B",
+        "courseTitle": "Applied Business Mathematics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Formulate and solve simple linear programs graphically."
+        ],
+        "subtopics": [
+          {
+            "name": "Linear programming",
+            "description": "Formulate and solve simple linear programs graphically.",
+            "objectives": [
+              "Formulate and solve simple linear programs graphically."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Chemistry",
+    "description": "JUPEB 2027–2031; SCI-J153",
+    "topics": [
+      {
+        "name": "Measurement",
+        "description": "General Chemistry",
+        "courseCode": "CHM 001",
+        "courseTitle": "General Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Convert SI units and report significant figures.",
+          "Distinguish accuracy and precision and calculate absolute, relative and percentage errors and standard deviation."
+        ],
+        "subtopics": [
+          {
+            "name": "Units",
+            "description": "Convert SI units and report significant figures.",
+            "objectives": [
+              "Convert SI units and report significant figures."
+            ]
+          },
+          {
+            "name": "Data analysis",
+            "description": "Distinguish accuracy and precision and calculate absolute, relative and percentage errors and standard deviation.",
+            "objectives": [
+              "Distinguish accuracy and precision and calculate absolute, relative and percentage errors and standard deviation."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mole concept",
+        "description": "General Chemistry",
+        "courseCode": "CHM 001",
+        "courseTitle": "General Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate isotopic abundances and relative atomic mass from mass spectra.",
+          "Convert between mass, particles and moles using Avogadro's constant.",
+          "Derive formulae from composition and combustion data.",
+          "Calculate molarity, molality, mole fraction and mass concentration.",
+          "Distinguish primary and secondary standards and calculate serial dilutions."
+        ],
+        "subtopics": [
+          {
+            "name": "Atomic masses",
+            "description": "Calculate isotopic abundances and relative atomic mass from mass spectra.",
+            "objectives": [
+              "Calculate isotopic abundances and relative atomic mass from mass spectra."
+            ]
+          },
+          {
+            "name": "The mole",
+            "description": "Convert between mass, particles and moles using Avogadro's constant.",
+            "objectives": [
+              "Convert between mass, particles and moles using Avogadro's constant."
+            ]
+          },
+          {
+            "name": "Empirical and molecular formula",
+            "description": "Derive formulae from composition and combustion data.",
+            "objectives": [
+              "Derive formulae from composition and combustion data."
+            ]
+          },
+          {
+            "name": "Stoichiometry",
+            "description": "Calculate molarity, molality, mole fraction and mass concentration.",
+            "objectives": [
+              "Calculate molarity, molality, mole fraction and mass concentration."
+            ]
+          },
+          {
+            "name": "Standard solutions",
+            "description": "Distinguish primary and secondary standards and calculate serial dilutions.",
+            "objectives": [
+              "Distinguish primary and secondary standards and calculate serial dilutions."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atomic structure",
+        "description": "General Chemistry",
+        "courseCode": "CHM 001",
+        "courseTitle": "General Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain evidence from atomic experiments and limitations of Dalton's theory.",
+          "Calculate photon energies, hydrogen spectral lines and ionization energy.",
+          "Assign quantum numbers and identify s, p and d orbital shapes.",
+          "Write configurations using Aufbau, Pauli and Hund rules."
+        ],
+        "subtopics": [
+          {
+            "name": "Subatomic particles",
+            "description": "Explain evidence from atomic experiments and limitations of Dalton's theory.",
+            "objectives": [
+              "Explain evidence from atomic experiments and limitations of Dalton's theory."
+            ]
+          },
+          {
+            "name": "Planck and Bohr theories",
+            "description": "Calculate photon energies, hydrogen spectral lines and ionization energy.",
+            "objectives": [
+              "Calculate photon energies, hydrogen spectral lines and ionization energy."
+            ]
+          },
+          {
+            "name": "Wave theory",
+            "description": "Assign quantum numbers and identify s, p and d orbital shapes.",
+            "objectives": [
+              "Assign quantum numbers and identify s, p and d orbital shapes."
+            ]
+          },
+          {
+            "name": "Electron configuration",
+            "description": "Write configurations using Aufbau, Pauli and Hund rules.",
+            "objectives": [
+              "Write configurations using Aufbau, Pauli and Hund rules."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Periodic Table",
+        "description": "General Chemistry",
+        "courseCode": "CHM 001",
+        "courseTitle": "General Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Identify periods, groups and blocks and explain periodic law.",
+          "Compare atomic and ionic radii, ionization energy, electron affinity and electronegativity."
+        ],
+        "subtopics": [
+          {
+            "name": "Modern periodic table",
+            "description": "Identify periods, groups and blocks and explain periodic law.",
+            "objectives": [
+              "Identify periods, groups and blocks and explain periodic law."
+            ]
+          },
+          {
+            "name": "Atomic properties",
+            "description": "Compare atomic and ionic radii, ionization energy, electron affinity and electronegativity.",
+            "objectives": [
+              "Compare atomic and ionic radii, ionization energy, electron affinity and electronegativity."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Types of chemical reactions",
+        "description": "General Chemistry",
+        "courseCode": "CHM 001",
+        "courseTitle": "General Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify acids and bases and solve neutralization calculations.",
+          "Predict solubility and write precipitation equations.",
+          "Assign oxidation numbers and balance redox equations in acidic and basic media.",
+          "Identify single and double displacement and disproportionation reactions."
+        ],
+        "subtopics": [
+          {
+            "name": "Neutralisation",
+            "description": "Classify acids and bases and solve neutralization calculations.",
+            "objectives": [
+              "Classify acids and bases and solve neutralization calculations."
+            ]
+          },
+          {
+            "name": "Precipitation",
+            "description": "Predict solubility and write precipitation equations.",
+            "objectives": [
+              "Predict solubility and write precipitation equations."
+            ]
+          },
+          {
+            "name": "Redox",
+            "description": "Assign oxidation numbers and balance redox equations in acidic and basic media.",
+            "objectives": [
+              "Assign oxidation numbers and balance redox equations in acidic and basic media."
+            ]
+          },
+          {
+            "name": "Displacement",
+            "description": "Identify single and double displacement and disproportionation reactions.",
+            "objectives": [
+              "Identify single and double displacement and disproportionation reactions."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chemical Bonding",
+        "description": "General Chemistry",
+        "courseCode": "CHM 001",
+        "courseTitle": "General Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain lattice energy, bond polarity, Fajan's rule and hybridization.",
+          "Predict molecular shapes using VSEPR.",
+          "Relate metallic bonding, dipoles and hydrogen bonding to physical properties."
+        ],
+        "subtopics": [
+          {
+            "name": "Ionic and covalent bonding",
+            "description": "Explain lattice energy, bond polarity, Fajan's rule and hybridization.",
+            "objectives": [
+              "Explain lattice energy, bond polarity, Fajan's rule and hybridization."
+            ]
+          },
+          {
+            "name": "Molecular geometry",
+            "description": "Predict molecular shapes using VSEPR.",
+            "objectives": [
+              "Predict molecular shapes using VSEPR."
+            ]
+          },
+          {
+            "name": "Metallic and intermolecular bonding",
+            "description": "Relate metallic bonding, dipoles and hydrogen bonding to physical properties.",
+            "objectives": [
+              "Relate metallic bonding, dipoles and hydrogen bonding to physical properties."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Practical",
+        "description": "General Chemistry",
+        "courseCode": "CHM 001",
+        "courseTitle": "General Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Record measurements with appropriate precision and prepare standard solutions.",
+          "Calculate concentrations from titration results and analyze experimental errors."
+        ],
+        "subtopics": [
+          {
+            "name": "Measurement and solutions",
+            "description": "Record measurements with appropriate precision and prepare standard solutions.",
+            "objectives": [
+              "Record measurements with appropriate precision and prepare standard solutions."
+            ]
+          },
+          {
+            "name": "Volumetric analysis",
+            "description": "Calculate concentrations from titration results and analyze experimental errors.",
+            "objectives": [
+              "Calculate concentrations from titration results and analyze experimental errors."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kinetic Theory of Matter",
+        "description": "Physical Chemistry",
+        "courseCode": "CHM 002",
+        "courseTitle": "Physical Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare states of matter and apply ideal and real gas concepts."
+        ],
+        "subtopics": [
+          {
+            "name": "States and gases",
+            "description": "Compare states of matter and apply ideal and real gas concepts.",
+            "objectives": [
+              "Compare states of matter and apply ideal and real gas concepts."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Solutions",
+        "description": "Physical Chemistry",
+        "courseCode": "CHM 002",
+        "courseTitle": "Physical Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify solutions and calculate colligative properties and electrolyte conductance."
+        ],
+        "subtopics": [
+          {
+            "name": "Solution properties",
+            "description": "Classify solutions and calculate colligative properties and electrolyte conductance.",
+            "objectives": [
+              "Classify solutions and calculate colligative properties and electrolyte conductance."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Thermochemistry",
+        "description": "Physical Chemistry",
+        "courseCode": "CHM 002",
+        "courseTitle": "Physical Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish exothermic and endothermic processes and calculate standard enthalpy changes using Hess's law."
+        ],
+        "subtopics": [
+          {
+            "name": "Enthalpy change",
+            "description": "Distinguish exothermic and endothermic processes and calculate standard enthalpy changes using Hess's law.",
+            "objectives": [
+              "Distinguish exothermic and endothermic processes and calculate standard enthalpy changes using Hess's law."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Thermodynamics",
+        "description": "Physical Chemistry",
+        "courseCode": "CHM 002",
+        "courseTitle": "Physical Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Apply thermodynamic laws and relate energy, entropy and spontaneity."
+        ],
+        "subtopics": [
+          {
+            "name": "Laws",
+            "description": "Apply thermodynamic laws and relate energy, entropy and spontaneity.",
+            "objectives": [
+              "Apply thermodynamic laws and relate energy, entropy and spontaneity."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Electrochemistry",
+        "description": "Physical Chemistry",
+        "courseCode": "CHM 002",
+        "courseTitle": "Physical Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Apply Faraday's laws, balance electrode reactions and calculate cell potentials."
+        ],
+        "subtopics": [
+          {
+            "name": "Electrolysis and cells",
+            "description": "Apply Faraday's laws, balance electrode reactions and calculate cell potentials.",
+            "objectives": [
+              "Apply Faraday's laws, balance electrode reactions and calculate cell potentials."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chemical Kinetics",
+        "description": "Physical Chemistry",
+        "courseCode": "CHM 002",
+        "courseTitle": "Physical Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Determine reaction order and rate constants from experimental data."
+        ],
+        "subtopics": [
+          {
+            "name": "Rate equations",
+            "description": "Determine reaction order and rate constants from experimental data.",
+            "objectives": [
+              "Determine reaction order and rate constants from experimental data."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Equilibrium State",
+        "description": "Physical Chemistry",
+        "courseCode": "CHM 002",
+        "courseTitle": "Physical Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Write equilibrium expressions and predict shifts in equilibrium."
+        ],
+        "subtopics": [
+          {
+            "name": "Mass action",
+            "description": "Write equilibrium expressions and predict shifts in equilibrium.",
+            "objectives": [
+              "Write equilibrium expressions and predict shifts in equilibrium."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nuclear Chemistry",
+        "description": "Physical Chemistry",
+        "courseCode": "CHM 002",
+        "courseTitle": "Physical Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify radiation and solve nuclear decay and half-life problems."
+        ],
+        "subtopics": [
+          {
+            "name": "Radioactivity",
+            "description": "Classify radiation and solve nuclear decay and half-life problems.",
+            "objectives": [
+              "Classify radiation and solve nuclear decay and half-life problems."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Practical",
+        "description": "Physical Chemistry",
+        "courseCode": "CHM 002",
+        "courseTitle": "Physical Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate enthalpy changes and molecular mass from experimental results."
+        ],
+        "subtopics": [
+          {
+            "name": "Calorimetry and freezing point",
+            "description": "Calculate enthalpy changes and molecular mass from experimental results.",
+            "objectives": [
+              "Calculate enthalpy changes and molecular mass from experimental results."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Periodicity",
+        "description": "Inorganic Chemistry",
+        "courseCode": "CHM 003",
+        "courseTitle": "Inorganic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare physical and chemical properties across periods and groups."
+        ],
+        "subtopics": [
+          {
+            "name": "General trends",
+            "description": "Compare physical and chemical properties across periods and groups.",
+            "objectives": [
+              "Compare physical and chemical properties across periods and groups."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chemistry of Hydrogen",
+        "description": "Inorganic Chemistry",
+        "courseCode": "CHM 003",
+        "courseTitle": "Inorganic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Describe isotopes, preparation and reactions of hydrogen."
+        ],
+        "subtopics": [
+          {
+            "name": "Hydrogen",
+            "description": "Describe isotopes, preparation and reactions of hydrogen.",
+            "objectives": [
+              "Describe isotopes, preparation and reactions of hydrogen."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "s-block elements",
+        "description": "Inorganic Chemistry",
+        "courseCode": "CHM 003",
+        "courseTitle": "Inorganic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare properties and reactions of alkali and alkaline earth metals."
+        ],
+        "subtopics": [
+          {
+            "name": "Groups 1 and 2",
+            "description": "Compare properties and reactions of alkali and alkaline earth metals.",
+            "objectives": [
+              "Compare properties and reactions of alkali and alkaline earth metals."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "p-block elements",
+        "description": "Inorganic Chemistry",
+        "courseCode": "CHM 003",
+        "courseTitle": "Inorganic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare properties and reactions of p-block elements and their compounds."
+        ],
+        "subtopics": [
+          {
+            "name": "Group chemistry",
+            "description": "Compare properties and reactions of p-block elements and their compounds.",
+            "objectives": [
+              "Compare properties and reactions of p-block elements and their compounds."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chemistry of the Environment",
+        "description": "Inorganic Chemistry",
+        "courseCode": "CHM 003",
+        "courseTitle": "Inorganic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain greenhouse effects and environmental pollution."
+        ],
+        "subtopics": [
+          {
+            "name": "Environmental chemistry",
+            "description": "Explain greenhouse effects and environmental pollution.",
+            "objectives": [
+              "Explain greenhouse effects and environmental pollution."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "d-block elements",
+        "description": "Inorganic Chemistry",
+        "courseCode": "CHM 003",
+        "courseTitle": "Inorganic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain variable oxidation states and name coordination compounds; predict structure and magnetic properties."
+        ],
+        "subtopics": [
+          {
+            "name": "Transition elements",
+            "description": "Explain variable oxidation states and name coordination compounds; predict structure and magnetic properties.",
+            "objectives": [
+              "Explain variable oxidation states and name coordination compounds; predict structure and magnetic properties."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nanochemistry",
+        "description": "Inorganic Chemistry",
+        "courseCode": "CHM 003",
+        "courseTitle": "Inorganic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify nanostructures and identify examples and applications."
+        ],
+        "subtopics": [
+          {
+            "name": "Nanomaterials",
+            "description": "Classify nanostructures and identify examples and applications.",
+            "objectives": [
+              "Classify nanostructures and identify examples and applications."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Practical",
+        "description": "Inorganic Chemistry",
+        "courseCode": "CHM 003",
+        "courseTitle": "Inorganic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Interpret flame tests and identify cations and anions from systematic test results."
+        ],
+        "subtopics": [
+          {
+            "name": "Qualitative analysis",
+            "description": "Interpret flame tests and identify cations and anions from systematic test results.",
+            "objectives": [
+              "Interpret flame tests and identify cations and anions from systematic test results."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Development and Importance of Organic Chemistry",
+        "description": "Organic Chemistry",
+        "courseCode": "CHM 004",
+        "courseTitle": "Organic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain tetravalency, catenation and industrial uses of organic compounds."
+        ],
+        "subtopics": [
+          {
+            "name": "Carbon",
+            "description": "Explain tetravalency, catenation and industrial uses of organic compounds.",
+            "objectives": [
+              "Explain tetravalency, catenation and industrial uses of organic compounds."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Separation and Purification Techniques",
+        "description": "Organic Chemistry",
+        "courseCode": "CHM 004",
+        "courseTitle": "Organic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Select distillation, extraction, sublimation, recrystallization or chromatography for mixtures.",
+          "Interpret qualitative tests and calculate empirical and molecular formulae."
+        ],
+        "subtopics": [
+          {
+            "name": "Separation",
+            "description": "Select distillation, extraction, sublimation, recrystallization or chromatography for mixtures.",
+            "objectives": [
+              "Select distillation, extraction, sublimation, recrystallization or chromatography for mixtures."
+            ]
+          },
+          {
+            "name": "Structural determination",
+            "description": "Interpret qualitative tests and calculate empirical and molecular formulae.",
+            "objectives": [
+              "Interpret qualitative tests and calculate empirical and molecular formulae."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Structure and Bonding in Organic Compounds",
+        "description": "Organic Chemistry",
+        "courseCode": "CHM 004",
+        "courseTitle": "Organic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Identify sigma and pi bonds and carbon hybridization.",
+          "Name organic compounds using IUPAC rules and identify functional groups."
+        ],
+        "subtopics": [
+          {
+            "name": "Hybridization",
+            "description": "Identify sigma and pi bonds and carbon hybridization.",
+            "objectives": [
+              "Identify sigma and pi bonds and carbon hybridization."
+            ]
+          },
+          {
+            "name": "Nomenclature",
+            "description": "Name organic compounds using IUPAC rules and identify functional groups.",
+            "objectives": [
+              "Name organic compounds using IUPAC rules and identify functional groups."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Reactions",
+        "description": "Organic Chemistry",
+        "courseCode": "CHM 004",
+        "courseTitle": "Organic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish homolytic and heterolytic cleavage, radicals, nucleophiles and electrophiles.",
+          "Classify addition, substitution and elimination mechanisms and distinguish SN1 and SN2.",
+          "Explain inductive, steric, mesomeric and electromeric effects."
+        ],
+        "subtopics": [
+          {
+            "name": "Bond cleavage",
+            "description": "Distinguish homolytic and heterolytic cleavage, radicals, nucleophiles and electrophiles.",
+            "objectives": [
+              "Distinguish homolytic and heterolytic cleavage, radicals, nucleophiles and electrophiles."
+            ]
+          },
+          {
+            "name": "Mechanisms",
+            "description": "Classify addition, substitution and elimination mechanisms and distinguish SN1 and SN2.",
+            "objectives": [
+              "Classify addition, substitution and elimination mechanisms and distinguish SN1 and SN2."
+            ]
+          },
+          {
+            "name": "Electronic effects",
+            "description": "Explain inductive, steric, mesomeric and electromeric effects.",
+            "objectives": [
+              "Explain inductive, steric, mesomeric and electromeric effects."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Stereochemistry",
+        "description": "Organic Chemistry",
+        "courseCode": "CHM 004",
+        "courseTitle": "Organic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Draw constitutional, geometric and optical isomers and identify chirality and tautomerism."
+        ],
+        "subtopics": [
+          {
+            "name": "Isomerism",
+            "description": "Draw constitutional, geometric and optical isomers and identify chirality and tautomerism.",
+            "objectives": [
+              "Draw constitutional, geometric and optical isomers and identify chirality and tautomerism."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Organic Compounds",
+        "description": "Organic Chemistry",
+        "courseCode": "CHM 004",
+        "courseTitle": "Organic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Name and predict reactions of alkanes, alkenes and alkynes using Markovnikov and Saytzeff rules.",
+          "Classify, name and predict preparation and reactions; interpret alcohol tests.",
+          "Distinguish aldehydes and ketones using reactions and tests.",
+          "Name compounds and predict preparation and reactions.",
+          "Classify compounds and explain amine basicity and diazonium formation.",
+          "Name ethers and predict preparation and reactions.",
+          "Explain aromaticity and predict benzene substitution and directing effects."
+        ],
+        "subtopics": [
+          {
+            "name": "Hydrocarbons",
+            "description": "Name and predict reactions of alkanes, alkenes and alkynes using Markovnikov and Saytzeff rules.",
+            "objectives": [
+              "Name and predict reactions of alkanes, alkenes and alkynes using Markovnikov and Saytzeff rules."
+            ]
+          },
+          {
+            "name": "Alcohols and alkyl halides",
+            "description": "Classify, name and predict preparation and reactions; interpret alcohol tests.",
+            "objectives": [
+              "Classify, name and predict preparation and reactions; interpret alcohol tests."
+            ]
+          },
+          {
+            "name": "Carbonyl compounds",
+            "description": "Distinguish aldehydes and ketones using reactions and tests.",
+            "objectives": [
+              "Distinguish aldehydes and ketones using reactions and tests."
+            ]
+          },
+          {
+            "name": "Carboxylic acids and derivatives",
+            "description": "Name compounds and predict preparation and reactions.",
+            "objectives": [
+              "Name compounds and predict preparation and reactions."
+            ]
+          },
+          {
+            "name": "Amines and nitriles",
+            "description": "Classify compounds and explain amine basicity and diazonium formation.",
+            "objectives": [
+              "Classify compounds and explain amine basicity and diazonium formation."
+            ]
+          },
+          {
+            "name": "Ethers",
+            "description": "Name ethers and predict preparation and reactions.",
+            "objectives": [
+              "Name ethers and predict preparation and reactions."
+            ]
+          },
+          {
+            "name": "Aromatic compounds",
+            "description": "Explain aromaticity and predict benzene substitution and directing effects.",
+            "objectives": [
+              "Explain aromaticity and predict benzene substitution and directing effects."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Macromolecules",
+        "description": "Organic Chemistry",
+        "courseCode": "CHM 004",
+        "courseTitle": "Organic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify sugars, starch and cellulose and interpret simple tests.",
+          "Draw amino acids, zwitterions and peptide bonds and classify proteins.",
+          "Identify monomers and distinguish polymerization types, thermosets and thermoplastics."
+        ],
+        "subtopics": [
+          {
+            "name": "Carbohydrates",
+            "description": "Classify sugars, starch and cellulose and interpret simple tests.",
+            "objectives": [
+              "Classify sugars, starch and cellulose and interpret simple tests."
+            ]
+          },
+          {
+            "name": "Proteins",
+            "description": "Draw amino acids, zwitterions and peptide bonds and classify proteins.",
+            "objectives": [
+              "Draw amino acids, zwitterions and peptide bonds and classify proteins."
+            ]
+          },
+          {
+            "name": "Polymers",
+            "description": "Identify monomers and distinguish polymerization types, thermosets and thermoplastics.",
+            "objectives": [
+              "Identify monomers and distinguish polymerization types, thermosets and thermoplastics."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Petroleum Industry",
+        "description": "Organic Chemistry",
+        "courseCode": "CHM 004",
+        "courseTitle": "Organic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain crude oil fractions, refining and cracking."
+        ],
+        "subtopics": [
+          {
+            "name": "Petrochemicals",
+            "description": "Explain crude oil fractions, refining and cracking.",
+            "objectives": [
+              "Explain crude oil fractions, refining and cracking."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Practical",
+        "description": "Organic Chemistry",
+        "courseCode": "CHM 004",
+        "courseTitle": "Organic Chemistry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Interpret functional-group tests and melting-point and recrystallization results."
+        ],
+        "subtopics": [
+          {
+            "name": "Organic identification",
+            "description": "Interpret functional-group tests and melting-point and recrystallization results.",
+            "objectives": [
+              "Interpret functional-group tests and melting-point and recrystallization results."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Physics",
+    "description": "JUPEB 2027–2031; SCI-J155",
+    "topics": [
+      {
+        "name": "Physical quantities and units",
+        "description": "Mechanics and Properties of Matter",
+        "courseCode": "PHY 001",
+        "courseTitle": "Mechanics and Properties of Matter",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Convert units, check dimensions, distinguish mass and weight and analyze measurement errors and graphs."
+        ],
+        "subtopics": [
+          {
+            "name": "Measurement",
+            "description": "Convert units, check dimensions, distinguish mass and weight and analyze measurement errors and graphs.",
+            "objectives": [
+              "Convert units, check dimensions, distinguish mass and weight and analyze measurement errors and graphs."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vectors",
+        "description": "Mechanics and Properties of Matter",
+        "courseCode": "PHY 001",
+        "courseTitle": "Mechanics and Properties of Matter",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Resolve vectors and calculate sums, differences and products in Cartesian coordinates."
+        ],
+        "subtopics": [
+          {
+            "name": "Vector operations",
+            "description": "Resolve vectors and calculate sums, differences and products in Cartesian coordinates.",
+            "objectives": [
+              "Resolve vectors and calculate sums, differences and products in Cartesian coordinates."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kinematics",
+        "description": "Mechanics and Properties of Matter",
+        "courseCode": "PHY 001",
+        "courseTitle": "Mechanics and Properties of Matter",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify motion and solve linear, relative, free-fall and projectile motion problems using equations and graphs."
+        ],
+        "subtopics": [
+          {
+            "name": "Motion",
+            "description": "Classify motion and solve linear, relative, free-fall and projectile motion problems using equations and graphs.",
+            "objectives": [
+              "Classify motion and solve linear, relative, free-fall and projectile motion problems using equations and graphs."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dynamics",
+        "description": "Mechanics and Properties of Matter",
+        "courseCode": "PHY 001",
+        "courseTitle": "Mechanics and Properties of Matter",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Apply Newton's laws, friction, moments and equilibrium to inclined planes and solve elastic and inelastic collision problems."
+        ],
+        "subtopics": [
+          {
+            "name": "Forces and momentum",
+            "description": "Apply Newton's laws, friction, moments and equilibrium to inclined planes and solve elastic and inelastic collision problems.",
+            "objectives": [
+              "Apply Newton's laws, friction, moments and equilibrium to inclined planes and solve elastic and inelastic collision problems."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gravitation",
+        "description": "Mechanics and Properties of Matter",
+        "courseCode": "PHY 001",
+        "courseTitle": "Mechanics and Properties of Matter",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate gravitational forces and apply Newton's gravitational law."
+        ],
+        "subtopics": [
+          {
+            "name": "Universal gravitation",
+            "description": "Calculate gravitational forces and apply Newton's gravitational law.",
+            "objectives": [
+              "Calculate gravitational forces and apply Newton's gravitational law."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Work, Energy and Power",
+        "description": "Mechanics and Properties of Matter",
+        "courseCode": "PHY 001",
+        "courseTitle": "Mechanics and Properties of Matter",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate work, power and energy and apply conservation of energy."
+        ],
+        "subtopics": [
+          {
+            "name": "Energy",
+            "description": "Calculate work, power and energy and apply conservation of energy.",
+            "objectives": [
+              "Calculate work, power and energy and apply conservation of energy."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Circular and Rotational Motion",
+        "description": "Mechanics and Properties of Matter",
+        "courseCode": "PHY 001",
+        "courseTitle": "Mechanics and Properties of Matter",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate angular displacement, velocity, acceleration and centripetal force."
+        ],
+        "subtopics": [
+          {
+            "name": "Angular motion",
+            "description": "Calculate angular displacement, velocity, acceleration and centripetal force.",
+            "objectives": [
+              "Calculate angular displacement, velocity, acceleration and centripetal force."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Elasticity",
+        "description": "Mechanics and Properties of Matter",
+        "courseCode": "PHY 001",
+        "courseTitle": "Mechanics and Properties of Matter",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate elastic deformation and interpret force-extension graphs."
+        ],
+        "subtopics": [
+          {
+            "name": "Hooke's law",
+            "description": "Calculate elastic deformation and interpret force-extension graphs.",
+            "objectives": [
+              "Calculate elastic deformation and interpret force-extension graphs."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hydrostatics",
+        "description": "Mechanics and Properties of Matter",
+        "courseCode": "PHY 001",
+        "courseTitle": "Mechanics and Properties of Matter",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate fluid pressure and buoyancy and apply principles of flotation."
+        ],
+        "subtopics": [
+          {
+            "name": "Fluids at rest",
+            "description": "Calculate fluid pressure and buoyancy and apply principles of flotation.",
+            "objectives": [
+              "Calculate fluid pressure and buoyancy and apply principles of flotation."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hydrodynamics",
+        "description": "Mechanics and Properties of Matter",
+        "courseCode": "PHY 001",
+        "courseTitle": "Mechanics and Properties of Matter",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Apply fluid-flow principles and explain molecular properties of liquids."
+        ],
+        "subtopics": [
+          {
+            "name": "Fluid flow",
+            "description": "Apply fluid-flow principles and explain molecular properties of liquids.",
+            "objectives": [
+              "Apply fluid-flow principles and explain molecular properties of liquids."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Temperature and Thermal Expansion",
+        "description": "Heat, Waves and Optics",
+        "courseCode": "PHY 002",
+        "courseTitle": "Heat, Waves and Optics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Convert temperature scales and calculate thermal expansion."
+        ],
+        "subtopics": [
+          {
+            "name": "Temperature",
+            "description": "Convert temperature scales and calculate thermal expansion.",
+            "objectives": [
+              "Convert temperature scales and calculate thermal expansion."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heat and Energy",
+        "description": "Heat, Waves and Optics",
+        "courseCode": "PHY 002",
+        "courseTitle": "Heat, Waves and Optics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate heat capacity, specific heat and latent heat and distinguish heat transfer mechanisms."
+        ],
+        "subtopics": [
+          {
+            "name": "Heat transfer",
+            "description": "Calculate heat capacity, specific heat and latent heat and distinguish heat transfer mechanisms.",
+            "objectives": [
+              "Calculate heat capacity, specific heat and latent heat and distinguish heat transfer mechanisms."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ideal gases",
+        "description": "Heat, Waves and Optics",
+        "courseCode": "PHY 002",
+        "courseTitle": "Heat, Waves and Optics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Apply Boyle's, Charles' and ideal gas laws."
+        ],
+        "subtopics": [
+          {
+            "name": "Gas laws",
+            "description": "Apply Boyle's, Charles' and ideal gas laws.",
+            "objectives": [
+              "Apply Boyle's, Charles' and ideal gas laws."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Thermodynamics",
+        "description": "Heat, Waves and Optics",
+        "courseCode": "PHY 002",
+        "courseTitle": "Heat, Waves and Optics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate work done by gases and apply thermodynamic laws."
+        ],
+        "subtopics": [
+          {
+            "name": "Work and heat",
+            "description": "Calculate work done by gases and apply thermodynamic laws.",
+            "objectives": [
+              "Calculate work done by gases and apply thermodynamic laws."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Waves",
+        "description": "Heat, Waves and Optics",
+        "courseCode": "PHY 002",
+        "courseTitle": "Heat, Waves and Optics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify waves and calculate wavelength, frequency and speed."
+        ],
+        "subtopics": [
+          {
+            "name": "Wave properties",
+            "description": "Classify waves and calculate wavelength, frequency and speed.",
+            "objectives": [
+              "Classify waves and calculate wavelength, frequency and speed."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Electromagnetic Waves",
+        "description": "Heat, Waves and Optics",
+        "courseCode": "PHY 002",
+        "courseTitle": "Heat, Waves and Optics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare electromagnetic waves and explain their properties and uses."
+        ],
+        "subtopics": [
+          {
+            "name": "Spectrum",
+            "description": "Compare electromagnetic waves and explain their properties and uses.",
+            "objectives": [
+              "Compare electromagnetic waves and explain their properties and uses."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sound Waves",
+        "description": "Heat, Waves and Optics",
+        "courseCode": "PHY 002",
+        "courseTitle": "Heat, Waves and Optics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Relate pitch, loudness and quality to wave properties and solve sound-wave problems."
+        ],
+        "subtopics": [
+          {
+            "name": "Sound",
+            "description": "Relate pitch, loudness and quality to wave properties and solve sound-wave problems.",
+            "objectives": [
+              "Relate pitch, loudness and quality to wave properties and solve sound-wave problems."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Geometrical Optics",
+        "description": "Heat, Waves and Optics",
+        "courseCode": "PHY 002",
+        "courseTitle": "Heat, Waves and Optics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Construct ray diagrams and calculate reflection and refraction quantities."
+        ],
+        "subtopics": [
+          {
+            "name": "Reflection and refraction",
+            "description": "Construct ray diagrams and calculate reflection and refraction quantities.",
+            "objectives": [
+              "Construct ray diagrams and calculate reflection and refraction quantities."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lenses and Optical Instruments",
+        "description": "Heat, Waves and Optics",
+        "courseCode": "PHY 002",
+        "courseTitle": "Heat, Waves and Optics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate focal length, image distance and magnification and construct ray diagrams."
+        ],
+        "subtopics": [
+          {
+            "name": "Lenses",
+            "description": "Calculate focal length, image distance and magnification and construct ray diagrams.",
+            "objectives": [
+              "Calculate focal length, image distance and magnification and construct ray diagrams."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wave Theory of Light",
+        "description": "Heat, Waves and Optics",
+        "courseCode": "PHY 002",
+        "courseTitle": "Heat, Waves and Optics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain interference, diffraction and polarization of light."
+        ],
+        "subtopics": [
+          {
+            "name": "Wave optics",
+            "description": "Explain interference, diffraction and polarization of light.",
+            "objectives": [
+              "Explain interference, diffraction and polarization of light."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Electrostatics",
+        "description": "Electricity and Magnetism",
+        "courseCode": "PHY 003",
+        "courseTitle": "Electricity and Magnetism",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Apply Coulomb's law and calculate electric field and potential."
+        ],
+        "subtopics": [
+          {
+            "name": "Electric fields",
+            "description": "Apply Coulomb's law and calculate electric field and potential.",
+            "objectives": [
+              "Apply Coulomb's law and calculate electric field and potential."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Capacitors",
+        "description": "Electricity and Magnetism",
+        "courseCode": "PHY 003",
+        "courseTitle": "Electricity and Magnetism",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate equivalent capacitance, charge and stored energy."
+        ],
+        "subtopics": [
+          {
+            "name": "Capacitance",
+            "description": "Calculate equivalent capacitance, charge and stored energy.",
+            "objectives": [
+              "Calculate equivalent capacitance, charge and stored energy."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Current Electricity",
+        "description": "Electricity and Magnetism",
+        "courseCode": "PHY 003",
+        "courseTitle": "Electricity and Magnetism",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Apply Ohm's law and circuit laws and calculate resistance, current and power."
+        ],
+        "subtopics": [
+          {
+            "name": "Circuits",
+            "description": "Apply Ohm's law and circuit laws and calculate resistance, current and power.",
+            "objectives": [
+              "Apply Ohm's law and circuit laws and calculate resistance, current and power."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magnetic Field",
+        "description": "Electricity and Magnetism",
+        "courseCode": "PHY 003",
+        "courseTitle": "Electricity and Magnetism",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Describe Earth's magnetic field and magnetic fields produced by currents."
+        ],
+        "subtopics": [
+          {
+            "name": "Magnetic fields",
+            "description": "Describe Earth's magnetic field and magnetic fields produced by currents.",
+            "objectives": [
+              "Describe Earth's magnetic field and magnetic fields produced by currents."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Force on Current-Carrying Conductors",
+        "description": "Electricity and Magnetism",
+        "courseCode": "PHY 003",
+        "courseTitle": "Electricity and Magnetism",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate magnetic force and determine its direction."
+        ],
+        "subtopics": [
+          {
+            "name": "Magnetic force",
+            "description": "Calculate magnetic force and determine its direction.",
+            "objectives": [
+              "Calculate magnetic force and determine its direction."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Electromagnetic Induction",
+        "description": "Electricity and Magnetism",
+        "courseCode": "PHY 003",
+        "courseTitle": "Electricity and Magnetism",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Apply Faraday's and Lenz's laws to induced emf."
+        ],
+        "subtopics": [
+          {
+            "name": "Induction",
+            "description": "Apply Faraday's and Lenz's laws to induced emf.",
+            "objectives": [
+              "Apply Faraday's and Lenz's laws to induced emf."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alternating Current",
+        "description": "Electricity and Magnetism",
+        "courseCode": "PHY 003",
+        "courseTitle": "Electricity and Magnetism",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate AC quantities and analyze alternating-current circuits."
+        ],
+        "subtopics": [
+          {
+            "name": "AC circuits",
+            "description": "Calculate AC quantities and analyze alternating-current circuits.",
+            "objectives": [
+              "Calculate AC quantities and analyze alternating-current circuits."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Atomic Structure",
+        "description": "Modern Physics",
+        "courseCode": "PHY 004",
+        "courseTitle": "Modern Physics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Describe nuclear structure and compare atomic models."
+        ],
+        "subtopics": [
+          {
+            "name": "Atomic models",
+            "description": "Describe nuclear structure and compare atomic models.",
+            "objectives": [
+              "Describe nuclear structure and compare atomic models."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Elements of Quantum Physics",
+        "description": "Modern Physics",
+        "courseCode": "PHY 004",
+        "courseTitle": "Modern Physics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain limitations of classical wave theory and calculate photon energy."
+        ],
+        "subtopics": [
+          {
+            "name": "Quantum theory",
+            "description": "Explain limitations of classical wave theory and calculate photon energy.",
+            "objectives": [
+              "Explain limitations of classical wave theory and calculate photon energy."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "X-Rays",
+        "description": "Modern Physics",
+        "courseCode": "PHY 004",
+        "courseTitle": "Modern Physics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain X-ray production, properties and applications."
+        ],
+        "subtopics": [
+          {
+            "name": "X-ray properties",
+            "description": "Explain X-ray production, properties and applications.",
+            "objectives": [
+              "Explain X-ray production, properties and applications."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wave-Particle Duality",
+        "description": "Modern Physics",
+        "courseCode": "PHY 004",
+        "courseTitle": "Modern Physics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate de Broglie wavelength and explain electron diffraction."
+        ],
+        "subtopics": [
+          {
+            "name": "Matter waves",
+            "description": "Calculate de Broglie wavelength and explain electron diffraction.",
+            "objectives": [
+              "Calculate de Broglie wavelength and explain electron diffraction."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Radioactivity",
+        "description": "Modern Physics",
+        "courseCode": "PHY 004",
+        "courseTitle": "Modern Physics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate half-life, mass defect and binding energy."
+        ],
+        "subtopics": [
+          {
+            "name": "Nuclear physics",
+            "description": "Calculate half-life, mass defect and binding energy.",
+            "objectives": [
+              "Calculate half-life, mass defect and binding energy."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Introduction to Electronics",
+        "description": "Modern Physics",
+        "courseCode": "PHY 004",
+        "courseTitle": "Modern Physics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish semiconductor types and explain basic electronic devices."
+        ],
+        "subtopics": [
+          {
+            "name": "Semiconductors",
+            "description": "Distinguish semiconductor types and explain basic electronic devices.",
+            "objectives": [
+              "Distinguish semiconductor types and explain basic electronic devices."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Applied Physics",
+        "description": "Modern Physics",
+        "courseCode": "PHY 004",
+        "courseTitle": "Modern Physics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain the principles and purposes of CT scanning and other syllabus applications."
+        ],
+        "subtopics": [
+          {
+            "name": "Medical applications",
+            "description": "Explain the principles and purposes of CT scanning and other syllabus applications.",
+            "objectives": [
+              "Explain the principles and purposes of CT scanning and other syllabus applications."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Biology",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/biology; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Cell biology",
+        "description": "General Biology",
+        "courseCode": "BIO 001",
+        "courseTitle": "General Biology",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Draw and label plant and animal cells;Genetics:Solve Mendelian crosses and distinguish mitosis from meiosis;Ecology:Construct food webs and explain nutrient cycles;Evolution:Compare evolutionary mechanisms and evidence;Enzymes:Interpret enzyme activity graphs."
+        ],
+        "subtopics": [
+          {
+            "name": "Cell biology",
+            "description": "Draw and label plant and animal cells;Genetics:Solve Mendelian crosses and distinguish mitosis from meiosis;Ecology:Construct food webs and explain nutrient cycles;Evolution:Compare evolutionary mechanisms and evidence;Enzymes:Interpret enzyme activity graphs.",
+            "objectives": [
+              "Draw and label plant and animal cells;Genetics:Solve Mendelian crosses and distinguish mitosis from meiosis;Ecology:Construct food webs and explain nutrient cycles;Evolution:Compare evolutionary mechanisms and evidence;Enzymes:Interpret enzyme activity graphs."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Microbial diversity",
+        "description": "Microbiology",
+        "courseCode": "BIO 002",
+        "courseTitle": "Microbiology",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish bacteria fungi viruses and protozoa;Microbial growth:Interpret microbial growth curves;Microbial genetics:Explain replication transcription and translation;Biotechnology:Describe industrial uses of microorganisms."
+        ],
+        "subtopics": [
+          {
+            "name": "Microbial diversity",
+            "description": "Distinguish bacteria fungi viruses and protozoa;Microbial growth:Interpret microbial growth curves;Microbial genetics:Explain replication transcription and translation;Biotechnology:Describe industrial uses of microorganisms.",
+            "objectives": [
+              "Distinguish bacteria fungi viruses and protozoa;Microbial growth:Interpret microbial growth curves;Microbial genetics:Explain replication transcription and translation;Biotechnology:Describe industrial uses of microorganisms."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Plant diversity",
+        "description": "Botany",
+        "courseCode": "BIO 003",
+        "courseTitle": "Botany",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify major plant groups;Plant anatomy:Label root stem and leaf tissues;Plant nutrition:Explain photosynthesis and mineral deficiency;Plant transport:Explain xylem and phloem transport;Plant reproduction:Compare sexual and vegetative reproduction."
+        ],
+        "subtopics": [
+          {
+            "name": "Plant diversity",
+            "description": "Classify major plant groups;Plant anatomy:Label root stem and leaf tissues;Plant nutrition:Explain photosynthesis and mineral deficiency;Plant transport:Explain xylem and phloem transport;Plant reproduction:Compare sexual and vegetative reproduction.",
+            "objectives": [
+              "Classify major plant groups;Plant anatomy:Label root stem and leaf tissues;Plant nutrition:Explain photosynthesis and mineral deficiency;Plant transport:Explain xylem and phloem transport;Plant reproduction:Compare sexual and vegetative reproduction."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Animal diversity",
+        "description": "Zoology",
+        "courseCode": "BIO 004",
+        "courseTitle": "Zoology",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare vertebrate and invertebrate groups;Animal physiology:Explain digestion respiration and circulation;Reproduction:Describe fertilization and development;Adaptation:Relate animal structures to their functions."
+        ],
+        "subtopics": [
+          {
+            "name": "Animal diversity",
+            "description": "Compare vertebrate and invertebrate groups;Animal physiology:Explain digestion respiration and circulation;Reproduction:Describe fertilization and development;Adaptation:Relate animal structures to their functions.",
+            "objectives": [
+              "Compare vertebrate and invertebrate groups;Animal physiology:Explain digestion respiration and circulation;Reproduction:Describe fertilization and development;Adaptation:Relate animal structures to their functions."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Agricultural Science",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/agriculture; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Soil",
+        "description": "Agronomy and crop production",
+        "courseCode": "AGR 001",
+        "courseTitle": "Agronomy and crop production",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify soils by texture and explain fertility;Conservation:Recommend erosion control methods;Irrigation:Compare irrigation systems;Crop production:Explain planting and crop management."
+        ],
+        "subtopics": [
+          {
+            "name": "Soil",
+            "description": "Classify soils by texture and explain fertility;Conservation:Recommend erosion control methods;Irrigation:Compare irrigation systems;Crop production:Explain planting and crop management.",
+            "objectives": [
+              "Classify soils by texture and explain fertility;Conservation:Recommend erosion control methods;Irrigation:Compare irrigation systems;Crop production:Explain planting and crop management."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Livestock",
+        "description": "Animal production",
+        "courseCode": "AGR 002",
+        "courseTitle": "Animal production",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare major livestock production systems;Nutrition:Identify feed nutrients and formulate balanced rations;Health:Recognize common livestock disease signs and prevention measures."
+        ],
+        "subtopics": [
+          {
+            "name": "Livestock",
+            "description": "Compare major livestock production systems;Nutrition:Identify feed nutrients and formulate balanced rations;Health:Recognize common livestock disease signs and prevention measures.",
+            "objectives": [
+              "Compare major livestock production systems;Nutrition:Identify feed nutrients and formulate balanced rations;Health:Recognize common livestock disease signs and prevention measures."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wildlife",
+        "description": "Wildlife aquaculture and agroforestry",
+        "courseCode": "AGR 003",
+        "courseTitle": "Wildlife aquaculture and agroforestry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain conservation practices;Aquaculture:Compare fish culture systems;Agroforestry:Explain benefits of integrating trees and crops."
+        ],
+        "subtopics": [
+          {
+            "name": "Wildlife",
+            "description": "Explain conservation practices;Aquaculture:Compare fish culture systems;Agroforestry:Explain benefits of integrating trees and crops.",
+            "objectives": [
+              "Explain conservation practices;Aquaculture:Compare fish culture systems;Agroforestry:Explain benefits of integrating trees and crops."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Farm economics",
+        "description": "Agricultural economics and extension",
+        "courseCode": "AGR 004",
+        "courseTitle": "Agricultural economics and extension",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate farm costs revenue and profit;Extension:Compare methods of communicating innovations to farmers."
+        ],
+        "subtopics": [
+          {
+            "name": "Farm economics",
+            "description": "Calculate farm costs revenue and profit;Extension:Compare methods of communicating innovations to farmers.",
+            "objectives": [
+              "Calculate farm costs revenue and profit;Extension:Compare methods of communicating innovations to farmers."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Geography",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/geography; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Earth movements",
+        "description": "Physical geography",
+        "courseCode": "GRY 001",
+        "courseTitle": "Physical geography",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain seasons and calculate longitude and time;Rocks:Classify rocks and explain their formation;Climate:Interpret climate graphs;Geomorphology:Explain weathering and river landforms."
+        ],
+        "subtopics": [
+          {
+            "name": "Earth movements",
+            "description": "Explain seasons and calculate longitude and time;Rocks:Classify rocks and explain their formation;Climate:Interpret climate graphs;Geomorphology:Explain weathering and river landforms.",
+            "objectives": [
+              "Explain seasons and calculate longitude and time;Rocks:Classify rocks and explain their formation;Climate:Interpret climate graphs;Geomorphology:Explain weathering and river landforms."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Population",
+        "description": "Human geography",
+        "courseCode": "GRY 002",
+        "courseTitle": "Human geography",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate population density and growth;Settlement:Compare rural and urban settlement patterns;Economic activity:Explain factors influencing industrial location."
+        ],
+        "subtopics": [
+          {
+            "name": "Population",
+            "description": "Calculate population density and growth;Settlement:Compare rural and urban settlement patterns;Economic activity:Explain factors influencing industrial location.",
+            "objectives": [
+              "Calculate population density and growth;Settlement:Compare rural and urban settlement patterns;Economic activity:Explain factors influencing industrial location."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Map reading",
+        "description": "Geographic techniques",
+        "courseCode": "GRY 003",
+        "courseTitle": "Geographic techniques",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate scale distance and gradient;Cartography:Interpret contour maps;GIS:Distinguish raster and vector data;Remote sensing:Explain uses of satellite imagery."
+        ],
+        "subtopics": [
+          {
+            "name": "Map reading",
+            "description": "Calculate scale distance and gradient;Cartography:Interpret contour maps;GIS:Distinguish raster and vector data;Remote sensing:Explain uses of satellite imagery.",
+            "objectives": [
+              "Calculate scale distance and gradient;Cartography:Interpret contour maps;GIS:Distinguish raster and vector data;Remote sensing:Explain uses of satellite imagery."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nigeria",
+        "description": "Regional geography",
+        "courseCode": "GRY 004",
+        "courseTitle": "Regional geography",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Describe major physical and economic regions;Africa:Compare regional resources and development challenges."
+        ],
+        "subtopics": [
+          {
+            "name": "Nigeria",
+            "description": "Describe major physical and economic regions;Africa:Compare regional resources and development challenges.",
+            "objectives": [
+              "Describe major physical and economic regions;Africa:Compare regional resources and development challenges."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Business Studies",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/business-studies; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Enterprise",
+        "description": "Business and its environment",
+        "courseCode": "BUS 001",
+        "courseTitle": "Business and its environment",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Evaluate business objectives and entrepreneurial roles;Business ownership:Compare forms of business organization;Environment:Analyze external influences on firms."
+        ],
+        "subtopics": [
+          {
+            "name": "Enterprise",
+            "description": "Evaluate business objectives and entrepreneurial roles;Business ownership:Compare forms of business organization;Environment:Analyze external influences on firms.",
+            "objectives": [
+              "Evaluate business objectives and entrepreneurial roles;Business ownership:Compare forms of business organization;Environment:Analyze external influences on firms."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Leadership",
+        "description": "Management I",
+        "courseCode": "BUS 002",
+        "courseTitle": "Management I",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare leadership styles;Organization:Design an organizational chart;Human resources:Explain recruitment and motivation."
+        ],
+        "subtopics": [
+          {
+            "name": "Leadership",
+            "description": "Compare leadership styles;Organization:Design an organizational chart;Human resources:Explain recruitment and motivation.",
+            "objectives": [
+              "Compare leadership styles;Organization:Design an organizational chart;Human resources:Explain recruitment and motivation."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Accounting",
+        "description": "Finance and accounting",
+        "courseCode": "BUS 003",
+        "courseTitle": "Finance and accounting",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Prepare basic financial statements;Finance:Compare sources of finance;Financial analysis:Calculate profitability and liquidity ratios."
+        ],
+        "subtopics": [
+          {
+            "name": "Accounting",
+            "description": "Prepare basic financial statements;Finance:Compare sources of finance;Financial analysis:Calculate profitability and liquidity ratios.",
+            "objectives": [
+              "Prepare basic financial statements;Finance:Compare sources of finance;Financial analysis:Calculate profitability and liquidity ratios."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Operations",
+        "description": "Management II",
+        "courseCode": "BUS 004",
+        "courseTitle": "Management II",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare production methods;Marketing:Apply the marketing mix to a product;Strategy:Conduct a SWOT analysis."
+        ],
+        "subtopics": [
+          {
+            "name": "Operations",
+            "description": "Compare production methods;Marketing:Apply the marketing mix to a product;Strategy:Conduct a SWOT analysis.",
+            "objectives": [
+              "Compare production methods;Marketing:Apply the marketing mix to a product;Strategy:Conduct a SWOT analysis."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Economics",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/economics; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Scarcity",
+        "description": "Principles of Economics I",
+        "courseCode": "ECN 001",
+        "courseTitle": "Principles of Economics I",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Use opportunity cost and production possibility curves;Price system:Calculate equilibrium and elasticity;Production:Interpret cost and revenue curves;Market structure:Compare competitive and monopoly markets."
+        ],
+        "subtopics": [
+          {
+            "name": "Scarcity",
+            "description": "Use opportunity cost and production possibility curves;Price system:Calculate equilibrium and elasticity;Production:Interpret cost and revenue curves;Market structure:Compare competitive and monopoly markets.",
+            "objectives": [
+              "Use opportunity cost and production possibility curves;Price system:Calculate equilibrium and elasticity;Production:Interpret cost and revenue curves;Market structure:Compare competitive and monopoly markets."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "National income",
+        "description": "Principles of Economics II",
+        "courseCode": "ECN 002",
+        "courseTitle": "Principles of Economics II",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate GDP using alternative approaches;Income determination:Calculate equilibrium income and multipliers;Money and banking:Explain money creation and central bank functions."
+        ],
+        "subtopics": [
+          {
+            "name": "National income",
+            "description": "Calculate GDP using alternative approaches;Income determination:Calculate equilibrium income and multipliers;Money and banking:Explain money creation and central bank functions.",
+            "objectives": [
+              "Calculate GDP using alternative approaches;Income determination:Calculate equilibrium income and multipliers;Money and banking:Explain money creation and central bank functions."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Public finance",
+        "description": "Applied Economics I",
+        "courseCode": "ECN 003",
+        "courseTitle": "Applied Economics I",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare taxation and expenditure policies;Development:Interpret development indicators;Stabilization:Evaluate fiscal and monetary policy."
+        ],
+        "subtopics": [
+          {
+            "name": "Public finance",
+            "description": "Compare taxation and expenditure policies;Development:Interpret development indicators;Stabilization:Evaluate fiscal and monetary policy.",
+            "objectives": [
+              "Compare taxation and expenditure policies;Development:Interpret development indicators;Stabilization:Evaluate fiscal and monetary policy."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "International trade",
+        "description": "Applied Economics II",
+        "courseCode": "ECN 004",
+        "courseTitle": "Applied Economics II",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Calculate comparative advantage;Balance of payments:Classify international transactions;Exchange rates:Explain currency appreciation and depreciation."
+        ],
+        "subtopics": [
+          {
+            "name": "International trade",
+            "description": "Calculate comparative advantage;Balance of payments:Classify international transactions;Exchange rates:Explain currency appreciation and depreciation.",
+            "objectives": [
+              "Calculate comparative advantage;Balance of payments:Classify international transactions;Exchange rates:Explain currency appreciation and depreciation."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Accounting",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/accounting; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Accounting equation",
+        "description": "Basic financial accounting",
+        "courseCode": "ACC 001",
+        "courseTitle": "Basic financial accounting",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Record transactions using double entry;Trial balance:Prepare a trial balance and correct errors;Final accounts:Prepare income statements and balance sheets."
+        ],
+        "subtopics": [
+          {
+            "name": "Accounting equation",
+            "description": "Record transactions using double entry;Trial balance:Prepare a trial balance and correct errors;Final accounts:Prepare income statements and balance sheets.",
+            "objectives": [
+              "Record transactions using double entry;Trial balance:Prepare a trial balance and correct errors;Final accounts:Prepare income statements and balance sheets."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cost classification",
+        "description": "Cost and management accounting",
+        "courseCode": "ACC 002",
+        "courseTitle": "Cost and management accounting",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish direct and indirect costs;Costing:Calculate unit costs;Budgeting:Prepare budgets and calculate variances;Break-even:Calculate contribution and break-even output."
+        ],
+        "subtopics": [
+          {
+            "name": "Cost classification",
+            "description": "Distinguish direct and indirect costs;Costing:Calculate unit costs;Budgeting:Prepare budgets and calculate variances;Break-even:Calculate contribution and break-even output.",
+            "objectives": [
+              "Distinguish direct and indirect costs;Costing:Calculate unit costs;Budgeting:Prepare budgets and calculate variances;Break-even:Calculate contribution and break-even output."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Audit framework",
+        "description": "Basic auditing",
+        "courseCode": "ACC 003",
+        "courseTitle": "Basic auditing",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain audit objectives and independence;Audit evidence:Evaluate evidence and internal controls;Audit reporting:Distinguish audit opinion types."
+        ],
+        "subtopics": [
+          {
+            "name": "Audit framework",
+            "description": "Explain audit objectives and independence;Audit evidence:Evaluate evidence and internal controls;Audit reporting:Distinguish audit opinion types.",
+            "objectives": [
+              "Explain audit objectives and independence;Audit evidence:Evaluate evidence and internal controls;Audit reporting:Distinguish audit opinion types."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tax principles",
+        "description": "Nigerian taxation",
+        "courseCode": "ACC 004",
+        "courseTitle": "Nigerian taxation",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain major Nigerian tax categories;Tax computation:Calculate liabilities using supplied rates;Tax administration:Distinguish assessment and filing obligations."
+        ],
+        "subtopics": [
+          {
+            "name": "Tax principles",
+            "description": "Explain major Nigerian tax categories;Tax computation:Calculate liabilities using supplied rates;Tax administration:Distinguish assessment and filing obligations.",
+            "objectives": [
+              "Explain major Nigerian tax categories;Tax computation:Calculate liabilities using supplied rates;Tax administration:Distinguish assessment and filing obligations."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Government",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/government; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Political concepts",
+        "description": "Elements of government",
+        "courseCode": "GOV 001",
+        "courseTitle": "Elements of government",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish power authority and legitimacy;Constitutions:Compare written and unwritten constitutions;Institutions:Explain separation of powers."
+        ],
+        "subtopics": [
+          {
+            "name": "Political concepts",
+            "description": "Distinguish power authority and legitimacy;Constitutions:Compare written and unwritten constitutions;Institutions:Explain separation of powers.",
+            "objectives": [
+              "Distinguish power authority and legitimacy;Constitutions:Compare written and unwritten constitutions;Institutions:Explain separation of powers."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Political ideologies",
+        "description": "Ideologies and political processes",
+        "courseCode": "GOV 002",
+        "courseTitle": "Ideologies and political processes",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare socialism liberalism and conservatism;Elections:Compare electoral systems;Parties:Explain political participation and interest groups."
+        ],
+        "subtopics": [
+          {
+            "name": "Political ideologies",
+            "description": "Compare socialism liberalism and conservatism;Elections:Compare electoral systems;Parties:Explain political participation and interest groups.",
+            "objectives": [
+              "Compare socialism liberalism and conservatism;Elections:Compare electoral systems;Parties:Explain political participation and interest groups."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Colonial administration",
+        "description": "Nigerian government and politics",
+        "courseCode": "GOV 003",
+        "courseTitle": "Nigerian government and politics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare colonial administrative systems;Constitutional development:Trace Nigerian constitutional changes;Federalism:Explain division of governmental powers."
+        ],
+        "subtopics": [
+          {
+            "name": "Colonial administration",
+            "description": "Compare colonial administrative systems;Constitutional development:Trace Nigerian constitutional changes;Federalism:Explain division of governmental powers.",
+            "objectives": [
+              "Compare colonial administrative systems;Constitutional development:Trace Nigerian constitutional changes;Federalism:Explain division of governmental powers."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Colonialism",
+        "description": "African government and politics",
+        "courseCode": "GOV 004",
+        "courseTitle": "African government and politics",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain effects of European colonization;African politics:Compare challenges of governance;International relations:Explain roles of regional organizations."
+        ],
+        "subtopics": [
+          {
+            "name": "Colonialism",
+            "description": "Explain effects of European colonization;African politics:Compare challenges of governance;International relations:Explain roles of regional organizations.",
+            "objectives": [
+              "Explain effects of European colonization;African politics:Compare challenges of governance;International relations:Explain roles of regional organizations."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Christian Religious Studies",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/crs; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Canon",
+        "description": "Old Testament studies",
+        "courseCode": "CRS 001",
+        "courseTitle": "Old Testament studies",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Classify Old Testament books and literary genres;Patriarchs:Explain the significance of Abraham and Moses;Monarchy:Compare leadership in ancient Israel."
+        ],
+        "subtopics": [
+          {
+            "name": "Canon",
+            "description": "Classify Old Testament books and literary genres;Patriarchs:Explain the significance of Abraham and Moses;Monarchy:Compare leadership in ancient Israel.",
+            "objectives": [
+              "Classify Old Testament books and literary genres;Patriarchs:Explain the significance of Abraham and Moses;Monarchy:Compare leadership in ancient Israel."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gospels",
+        "description": "New Testament studies",
+        "courseCode": "CRS 002",
+        "courseTitle": "New Testament studies",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare the Synoptic Gospels;Jesus:Interpret selected teachings and parables;Passion:Explain the significance of crucifixion and resurrection narratives."
+        ],
+        "subtopics": [
+          {
+            "name": "Gospels",
+            "description": "Compare the Synoptic Gospels;Jesus:Interpret selected teachings and parables;Passion:Explain the significance of crucifixion and resurrection narratives.",
+            "objectives": [
+              "Compare the Synoptic Gospels;Jesus:Interpret selected teachings and parables;Passion:Explain the significance of crucifixion and resurrection narratives."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Missions",
+        "description": "History of Christianity in West Africa",
+        "courseCode": "CRS 003",
+        "courseTitle": "History of Christianity in West Africa",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Trace missionary activities in West Africa;Nigeria:Explain the establishment of Christianity in Nigeria;Churches:Compare indigenous church movements."
+        ],
+        "subtopics": [
+          {
+            "name": "Missions",
+            "description": "Trace missionary activities in West Africa;Nigeria:Explain the establishment of Christianity in Nigeria;Churches:Compare indigenous church movements.",
+            "objectives": [
+              "Trace missionary activities in West Africa;Nigeria:Explain the establishment of Christianity in Nigeria;Churches:Compare indigenous church movements."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ethics",
+        "description": "Religion and society",
+        "courseCode": "CRS 004",
+        "courseTitle": "Religion and society",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Evaluate Christian responses to social issues;Religion:Discuss relations between religion and society."
+        ],
+        "subtopics": [
+          {
+            "name": "Ethics",
+            "description": "Evaluate Christian responses to social issues;Religion:Discuss relations between religion and society.",
+            "objectives": [
+              "Evaluate Christian responses to social issues;Religion:Discuss relations between religion and society."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "French",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/french; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Greetings",
+        "description": "Oral French and grammar I",
+        "courseCode": "FRE 001",
+        "courseTitle": "Oral French and grammar I",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Conduct a short introductory conversation;Pronunciation:Pronounce common French sounds;Verbs:Conjugate être and avoir;Numbers:State dates times and quantities."
+        ],
+        "subtopics": [
+          {
+            "name": "Greetings",
+            "description": "Conduct a short introductory conversation;Pronunciation:Pronounce common French sounds;Verbs:Conjugate être and avoir;Numbers:State dates times and quantities.",
+            "objectives": [
+              "Conduct a short introductory conversation;Pronunciation:Pronounce common French sounds;Verbs:Conjugate être and avoir;Numbers:State dates times and quantities."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tenses",
+        "description": "Oral French and grammar II",
+        "courseCode": "FRE 002",
+        "courseTitle": "Oral French and grammar II",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Construct sentences in past and future tenses;Pronouns:Use object pronouns in sentences;Conversation:Ask for directions and express preferences."
+        ],
+        "subtopics": [
+          {
+            "name": "Tenses",
+            "description": "Construct sentences in past and future tenses;Pronouns:Use object pronouns in sentences;Conversation:Ask for directions and express preferences.",
+            "objectives": [
+              "Construct sentences in past and future tenses;Pronouns:Use object pronouns in sentences;Conversation:Ask for directions and express preferences."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Writing",
+        "description": "Writing and civilization I",
+        "courseCode": "FRE 003",
+        "courseTitle": "Writing and civilization I",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compose a short formal letter;Comprehension:Answer questions on a French passage;Culture:Describe aspects of Francophone life."
+        ],
+        "subtopics": [
+          {
+            "name": "Writing",
+            "description": "Compose a short formal letter;Comprehension:Answer questions on a French passage;Culture:Describe aspects of Francophone life.",
+            "objectives": [
+              "Compose a short formal letter;Comprehension:Answer questions on a French passage;Culture:Describe aspects of Francophone life."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Composition",
+        "description": "Writing and civilization II",
+        "courseCode": "FRE 004",
+        "courseTitle": "Writing and civilization II",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Write a coherent French essay;Translation:Translate short passages accurately;Civilization:Compare cultural practices in Francophone communities."
+        ],
+        "subtopics": [
+          {
+            "name": "Composition",
+            "description": "Write a coherent French essay;Translation:Translate short passages accurately;Civilization:Compare cultural practices in Francophone communities.",
+            "objectives": [
+              "Write a coherent French essay;Translation:Translate short passages accurately;Civilization:Compare cultural practices in Francophone communities."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "History",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/history; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Ghana",
+        "description": "African history I",
+        "courseCode": "HIS 001",
+        "courseTitle": "African history I",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain factors in the rise and decline of Ghana;Mali:Assess the role of Mansa Musa;Sudanic states:Compare political and economic institutions."
+        ],
+        "subtopics": [
+          {
+            "name": "Ghana",
+            "description": "Explain factors in the rise and decline of Ghana;Mali:Assess the role of Mansa Musa;Sudanic states:Compare political and economic institutions.",
+            "objectives": [
+              "Explain factors in the rise and decline of Ghana;Mali:Assess the role of Mansa Musa;Sudanic states:Compare political and economic institutions."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Colonialism",
+        "description": "African history II",
+        "courseCode": "HIS 002",
+        "courseTitle": "African history II",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain causes and effects of colonial expansion;Nationalism:Compare independence movements;Postcolonial Africa:Assess nation-building challenges."
+        ],
+        "subtopics": [
+          {
+            "name": "Colonialism",
+            "description": "Explain causes and effects of colonial expansion;Nationalism:Compare independence movements;Postcolonial Africa:Assess nation-building challenges.",
+            "objectives": [
+              "Explain causes and effects of colonial expansion;Nationalism:Compare independence movements;Postcolonial Africa:Assess nation-building challenges."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Precolonial states",
+        "description": "Nigerian history",
+        "courseCode": "HIS 003",
+        "courseTitle": "Nigerian history",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare political structures of Nigerian societies;Colonial Nigeria:Explain administrative changes;Independence:Trace Nigerian nationalist movements."
+        ],
+        "subtopics": [
+          {
+            "name": "Precolonial states",
+            "description": "Compare political structures of Nigerian societies;Colonial Nigeria:Explain administrative changes;Independence:Trace Nigerian nationalist movements.",
+            "objectives": [
+              "Compare political structures of Nigerian societies;Colonial Nigeria:Explain administrative changes;Independence:Trace Nigerian nationalist movements."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "International conflict",
+        "description": "World history",
+        "courseCode": "HIS 004",
+        "courseTitle": "World history",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain causes and consequences of major wars;International institutions:Assess roles of international organizations."
+        ],
+        "subtopics": [
+          {
+            "name": "International conflict",
+            "description": "Explain causes and consequences of major wars;International institutions:Assess roles of international organizations.",
+            "objectives": [
+              "Explain causes and consequences of major wars;International institutions:Assess roles of international organizations."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Islamic Studies",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/irs; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Jahiliyyah",
+        "description": "History of Islam",
+        "courseCode": "ISS 001",
+        "courseTitle": "History of Islam",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain social conditions and Islamic reforms;Prophet Muhammad:Describe key events in his early life and mission;Early caliphate:Compare major developments under early caliphs."
+        ],
+        "subtopics": [
+          {
+            "name": "Jahiliyyah",
+            "description": "Explain social conditions and Islamic reforms;Prophet Muhammad:Describe key events in his early life and mission;Early caliphate:Compare major developments under early caliphs.",
+            "objectives": [
+              "Explain social conditions and Islamic reforms;Prophet Muhammad:Describe key events in his early life and mission;Early caliphate:Compare major developments under early caliphs."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Quran",
+        "description": "Quran and Hadith",
+        "courseCode": "ISS 002",
+        "courseTitle": "Quran and Hadith",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain revelation and compilation;Hadith:Distinguish categories and methods of authentication;Interpretation:Explain selected passages and teachings."
+        ],
+        "subtopics": [
+          {
+            "name": "Quran",
+            "description": "Explain revelation and compilation;Hadith:Distinguish categories and methods of authentication;Interpretation:Explain selected passages and teachings.",
+            "objectives": [
+              "Explain revelation and compilation;Hadith:Distinguish categories and methods of authentication;Interpretation:Explain selected passages and teachings."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sources",
+        "description": "Islamic jurisprudence",
+        "courseCode": "ISS 003",
+        "courseTitle": "Islamic jurisprudence",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish sources of Islamic law;Worship:Explain requirements of major religious observances;Transactions:Apply basic principles to case studies."
+        ],
+        "subtopics": [
+          {
+            "name": "Sources",
+            "description": "Distinguish sources of Islamic law;Worship:Explain requirements of major religious observances;Transactions:Apply basic principles to case studies.",
+            "objectives": [
+              "Distinguish sources of Islamic law;Worship:Explain requirements of major religious observances;Transactions:Apply basic principles to case studies."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ethics",
+        "description": "Islamic thought and society",
+        "courseCode": "ISS 004",
+        "courseTitle": "Islamic thought and society",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain Islamic ethical principles;Society:Discuss social responsibilities;Civilization:Assess contributions to learning and culture."
+        ],
+        "subtopics": [
+          {
+            "name": "Ethics",
+            "description": "Explain Islamic ethical principles;Society:Discuss social responsibilities;Civilization:Assess contributions to learning and culture.",
+            "objectives": [
+              "Explain Islamic ethical principles;Society:Discuss social responsibilities;Civilization:Assess contributions to learning and culture."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Literature-in-English",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/literature; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Dramatic forms",
+        "description": "Drama",
+        "courseCode": "LIT 001",
+        "courseTitle": "Drama",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Distinguish tragedy comedy and other forms;Dramatic technique:Analyze dialogue conflict and characterization;Performance:Explain staging and dramatic effects."
+        ],
+        "subtopics": [
+          {
+            "name": "Dramatic forms",
+            "description": "Distinguish tragedy comedy and other forms;Dramatic technique:Analyze dialogue conflict and characterization;Performance:Explain staging and dramatic effects.",
+            "objectives": [
+              "Distinguish tragedy comedy and other forms;Dramatic technique:Analyze dialogue conflict and characterization;Performance:Explain staging and dramatic effects."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Narrative",
+        "description": "Prose fiction",
+        "courseCode": "LIT 002",
+        "courseTitle": "Prose fiction",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Identify point of view and plot structure;Character:Analyze characterization and setting;Theme:Support literary interpretations with textual evidence."
+        ],
+        "subtopics": [
+          {
+            "name": "Narrative",
+            "description": "Identify point of view and plot structure;Character:Analyze characterization and setting;Theme:Support literary interpretations with textual evidence.",
+            "objectives": [
+              "Identify point of view and plot structure;Character:Analyze characterization and setting;Theme:Support literary interpretations with textual evidence."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Poetic form",
+        "description": "Poetry",
+        "courseCode": "LIT 003",
+        "courseTitle": "Poetry",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Identify rhyme rhythm and stanza patterns;Imagery:Analyze figurative language;Interpretation:Explain themes using textual evidence."
+        ],
+        "subtopics": [
+          {
+            "name": "Poetic form",
+            "description": "Identify rhyme rhythm and stanza patterns;Imagery:Analyze figurative language;Interpretation:Explain themes using textual evidence.",
+            "objectives": [
+              "Identify rhyme rhythm and stanza patterns;Imagery:Analyze figurative language;Interpretation:Explain themes using textual evidence."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Unseen texts",
+        "description": "Literary appreciation and criticism",
+        "courseCode": "LIT 004",
+        "courseTitle": "Literary appreciation and criticism",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Write a close reading of an unfamiliar passage;Criticism:Compare literary approaches;Essay:Construct a supported comparative argument."
+        ],
+        "subtopics": [
+          {
+            "name": "Unseen texts",
+            "description": "Write a close reading of an unfamiliar passage;Criticism:Compare literary approaches;Essay:Construct a supported comparative argument.",
+            "objectives": [
+              "Write a close reading of an unfamiliar passage;Criticism:Compare literary approaches;Essay:Construct a supported comparative argument."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Music",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/music; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Notation",
+        "description": "Basic theory of music",
+        "courseCode": "MUS 001",
+        "courseTitle": "Basic theory of music",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Read and write notes on different clefs;Scales:Construct major and minor scales;Rhythm:Complete measures in given time signatures;Intervals:Identify musical intervals."
+        ],
+        "subtopics": [
+          {
+            "name": "Notation",
+            "description": "Read and write notes on different clefs;Scales:Construct major and minor scales;Rhythm:Complete measures in given time signatures;Intervals:Identify musical intervals.",
+            "objectives": [
+              "Read and write notes on different clefs;Scales:Construct major and minor scales;Rhythm:Complete measures in given time signatures;Intervals:Identify musical intervals."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Traditions",
+        "description": "Music history",
+        "courseCode": "MUS 002",
+        "courseTitle": "Music history",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare African and Western musical traditions;Composers:Describe contributions of selected composers."
+        ],
+        "subtopics": [
+          {
+            "name": "Traditions",
+            "description": "Compare African and Western musical traditions;Composers:Describe contributions of selected composers.",
+            "objectives": [
+              "Compare African and Western musical traditions;Composers:Describe contributions of selected composers."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sight reading",
+        "description": "Practical musicianship",
+        "courseCode": "MUS 003",
+        "courseTitle": "Practical musicianship",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Perform a short notated passage;Aural skills:Identify rhythmic and melodic patterns;Performance:Demonstrate appropriate technique."
+        ],
+        "subtopics": [
+          {
+            "name": "Sight reading",
+            "description": "Perform a short notated passage;Aural skills:Identify rhythmic and melodic patterns;Performance:Demonstrate appropriate technique.",
+            "objectives": [
+              "Perform a short notated passage;Aural skills:Identify rhythmic and melodic patterns;Performance:Demonstrate appropriate technique."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Harmony",
+        "description": "Composition",
+        "courseCode": "MUS 004",
+        "courseTitle": "Composition",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Construct simple chord progressions;Composition:Write a short melody and rhythmic accompaniment."
+        ],
+        "subtopics": [
+          {
+            "name": "Harmony",
+            "description": "Construct simple chord progressions;Composition:Write a short melody and rhythmic accompaniment.",
+            "objectives": [
+              "Construct simple chord progressions;Composition:Write a short melody and rhythmic accompaniment."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Visual Arts",
+    "description": "Provisional study outline; reference: https://studentfirst.ng/jupeb/syllabus/visual-art; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Movements",
+        "description": "Art history",
+        "courseCode": "VSA 001",
+        "courseTitle": "Art history",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Compare features of major art movements;African art:Identify characteristics of Nok Ife and Benin art;Artists:Analyze selected works in historical context."
+        ],
+        "subtopics": [
+          {
+            "name": "Movements",
+            "description": "Compare features of major art movements;African art:Identify characteristics of Nok Ife and Benin art;Artists:Analyze selected works in historical context.",
+            "objectives": [
+              "Compare features of major art movements;African art:Identify characteristics of Nok Ife and Benin art;Artists:Analyze selected works in historical context."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drawing",
+        "description": "Two dimensional design",
+        "courseCode": "VSA 002",
+        "courseTitle": "Two dimensional design",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Produce observational drawings using proportion;Painting:Apply color and composition principles;Textiles:Create a repeating design."
+        ],
+        "subtopics": [
+          {
+            "name": "Drawing",
+            "description": "Produce observational drawings using proportion;Painting:Apply color and composition principles;Textiles:Create a repeating design.",
+            "objectives": [
+              "Produce observational drawings using proportion;Painting:Apply color and composition principles;Textiles:Create a repeating design."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sculpture",
+        "description": "Three dimensional design",
+        "courseCode": "VSA 003",
+        "courseTitle": "Three dimensional design",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Model a three-dimensional form;Construction:Apply balance and structural principles;Ceramics:Describe basic forming and finishing processes."
+        ],
+        "subtopics": [
+          {
+            "name": "Sculpture",
+            "description": "Model a three-dimensional form;Construction:Apply balance and structural principles;Ceramics:Describe basic forming and finishing processes.",
+            "objectives": [
+              "Model a three-dimensional form;Construction:Apply balance and structural principles;Ceramics:Describe basic forming and finishing processes."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crafts",
+        "description": "Decorative arts and crafts",
+        "courseCode": "VSA 004",
+        "courseTitle": "Decorative arts and crafts",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Design a functional decorative object;Materials:Select appropriate materials and techniques."
+        ],
+        "subtopics": [
+          {
+            "name": "Crafts",
+            "description": "Design a functional decorative object;Materials:Select appropriate materials and techniques.",
+            "objectives": [
+              "Design a functional decorative object;Materials:Select appropriate materials and techniques."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Igbo",
+    "description": "Provisional general study outline; no subject syllabus source verified; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Orthography",
+        "description": "Language fundamentals",
+        "courseCode": "IGB 001",
+        "courseTitle": "Language fundamentals",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Write correctly marked Igbo words;Phonology:Distinguish tone patterns and vowel sounds."
+        ],
+        "subtopics": [
+          {
+            "name": "Orthography",
+            "description": "Write correctly marked Igbo words;Phonology:Distinguish tone patterns and vowel sounds.",
+            "objectives": [
+              "Write correctly marked Igbo words;Phonology:Distinguish tone patterns and vowel sounds."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grammar",
+        "description": "Grammar and composition",
+        "courseCode": "IGB 002",
+        "courseTitle": "Grammar and composition",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Construct grammatical sentences;Composition:Write a coherent Igbo essay."
+        ],
+        "subtopics": [
+          {
+            "name": "Grammar",
+            "description": "Construct grammatical sentences;Composition:Write a coherent Igbo essay.",
+            "objectives": [
+              "Construct grammatical sentences;Composition:Write a coherent Igbo essay."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oral literature",
+        "description": "Literature",
+        "courseCode": "IGB 003",
+        "courseTitle": "Literature",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Interpret proverbs and folktales;Written literature:Analyze themes in selected texts."
+        ],
+        "subtopics": [
+          {
+            "name": "Oral literature",
+            "description": "Interpret proverbs and folktales;Written literature:Analyze themes in selected texts.",
+            "objectives": [
+              "Interpret proverbs and folktales;Written literature:Analyze themes in selected texts."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Customs",
+        "description": "Culture",
+        "courseCode": "IGB 004",
+        "courseTitle": "Culture",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain selected Igbo cultural practices;Communication:Use appropriate expressions in social contexts."
+        ],
+        "subtopics": [
+          {
+            "name": "Customs",
+            "description": "Explain selected Igbo cultural practices;Communication:Use appropriate expressions in social contexts.",
+            "objectives": [
+              "Explain selected Igbo cultural practices;Communication:Use appropriate expressions in social contexts."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "programme": "JUPEB",
+    "subject": "Yoruba",
+    "description": "Provisional general study outline; no subject syllabus source verified; group assignments and objectives require official verification.",
+    "topics": [
+      {
+        "name": "Orthography",
+        "description": "Language fundamentals",
+        "courseCode": "YOR 001",
+        "courseTitle": "Language fundamentals",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Apply Yoruba tone marks and spelling;Phonology:Distinguish vowel and consonant patterns."
+        ],
+        "subtopics": [
+          {
+            "name": "Orthography",
+            "description": "Apply Yoruba tone marks and spelling;Phonology:Distinguish vowel and consonant patterns.",
+            "objectives": [
+              "Apply Yoruba tone marks and spelling;Phonology:Distinguish vowel and consonant patterns."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grammar",
+        "description": "Grammar and composition",
+        "courseCode": "YOR 002",
+        "courseTitle": "Grammar and composition",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Construct grammatical Yoruba sentences;Composition:Write a coherent Yoruba essay."
+        ],
+        "subtopics": [
+          {
+            "name": "Grammar",
+            "description": "Construct grammatical Yoruba sentences;Composition:Write a coherent Yoruba essay.",
+            "objectives": [
+              "Construct grammatical Yoruba sentences;Composition:Write a coherent Yoruba essay."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oral poetry",
+        "description": "Literature",
+        "courseCode": "YOR 003",
+        "courseTitle": "Literature",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Interpret figurative language and proverbs;Written literature:Analyze themes in selected texts."
+        ],
+        "subtopics": [
+          {
+            "name": "Oral poetry",
+            "description": "Interpret figurative language and proverbs;Written literature:Analyze themes in selected texts.",
+            "objectives": [
+              "Interpret figurative language and proverbs;Written literature:Analyze themes in selected texts."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Customs",
+        "description": "Culture",
+        "courseCode": "YOR 004",
+        "courseTitle": "Culture",
+        "difficulty": "medium",
+        "estimatedHours": 2,
+        "objectives": [
+          "Explain selected Yoruba cultural practices;Communication:Use appropriate registers in conversation."
+        ],
+        "subtopics": [
+          {
+            "name": "Customs",
+            "description": "Explain selected Yoruba cultural practices;Communication:Use appropriate registers in conversation.",
+            "objectives": [
+              "Explain selected Yoruba cultural practices;Communication:Use appropriate registers in conversation."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

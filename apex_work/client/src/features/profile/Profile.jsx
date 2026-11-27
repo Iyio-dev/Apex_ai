@@ -10,10 +10,10 @@ import { Notice } from "../../components/ui/Notice";
 import { subjects, dateISO, prettyDate, cls } from "../../lib/format";
 export function Profile() {
   const { data, loading, refresh } = useLoad("/academic/profile"),
-    { data: syllabusRecords } = useLoad("/academic/syllabuses"),
+    { data: syllabusRecords, refresh: refreshSyllabuses } = useLoad("/academic/syllabuses"),
     [form, setForm] = useState({
       programme: "OAU JUPEB",
-      subjects: subjects,
+      subjects: [],
       goal: "",
       weeklyHours: 14,
       strengths: [],
@@ -26,7 +26,7 @@ export function Profile() {
     if (data)
       setForm({
         programme: data.programme || "OAU JUPEB",
-        subjects: data.subjects || subjects,
+        subjects: data.subjects || [],
         goal: data.goal || "",
         weeklyHours: data.weeklyHours ?? 14,
         strengths: data.strengths || [],
@@ -55,6 +55,7 @@ export function Profile() {
       });
       setSuccess("Profile saved.");
       refresh();
+      refreshSyllabuses();
     } catch (e) {
       setError(errorText(e));
     } finally {
@@ -82,13 +83,14 @@ export function Profile() {
             />
           </label>
           <fieldset>
-            <legend className="font-medium text-sm mb-2">Subjects</legend>
+            <legend className="font-medium text-sm mb-2">Select exactly four subjects ({form.subjects.length}/4)</legend>
             <div className="flex flex-wrap gap-4">
               {subjects.map((s) => (
                 <label key={s} className="flex gap-2 items-center">
                   <input
                     type="checkbox"
                     checked={form.subjects.includes(s)}
+                    disabled={!form.subjects.includes(s) && form.subjects.length >= 4}
                     onChange={(e) =>
                       update(
                         "subjects",
@@ -144,7 +146,7 @@ export function Profile() {
               {!availableTopics.length && <p className="muted text-sm">No syllabus topics available.</p>}
             </fieldset>
           ))}
-          <button className="btn" disabled={busy || !form.subjects.length}>
+          <button className="btn" disabled={busy || form.subjects.length !== 4}>
             {busy ? "Saving…" : "Save academic profile"}
           </button>
         </form>

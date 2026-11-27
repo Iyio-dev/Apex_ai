@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BookOpen, ClipboardList, Plus, Save, Trash2, RefreshCw, ShieldCheck, ChevronRight, Pencil, X, Search, Layers3, CircleHelp, CheckCircle2 } from "lucide-react";
 import { api, errorText } from "../../api";
-export const SUBJECTS = ["Mathematics", "Physics", "Chemistry", "Biology"];
+export const SUBJECTS = ["Mathematics", "Chemistry", "Physics", "Biology", "Agricultural Science", "Geography", "Business Studies", "Economics", "Accounting", "Government", "Christian Religious Studies", "French", "History", "Islamic Studies", "Literature-in-English", "Music", "Visual Arts", "Igbo", "Yoruba"];
 export const emptySyllabus = () => ({
   programme: "OAU JUPEB", subject: "Mathematics", description: "", topics: []
 });

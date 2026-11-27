@@ -111,8 +111,7 @@ export const analyzeAcademicProfile = async (data) => {
           role: "system",
           content: `
 You are APEX, an academic analysis assistant
-for JUPEB students studying Mathematics,
-Physics, Chemistry and Biology.
+for JUPEB students studying their selected subjects.
 
 You must return valid JSON only.
 

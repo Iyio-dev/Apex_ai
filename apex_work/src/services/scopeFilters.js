@@ -1,0 +1,3 @@
+export const inScope=(scope,a)=>scope.topics.get(String(a.topicId??a.topic))===a.subject && scope.topics.has(String(a.topicId??a.topic));
+export const scopedPlan=(scope,p)=>({...p,preferences:p.preferences?{...p.preferences,focusSubjects:(p.preferences.focusSubjects||[]).filter(s=>[...scope.topics.values()].includes(s)),focusTopicIds:(p.preferences.focusTopicIds||[]).filter(id=>scope.topics.has(String(id)))}:p.preferences,activities:(p.activities||[]).filter(a=>inScope(scope,a))});
+export const scopedAssessment=(scope,a)=>!!a.generatedQuestions?.length && a.generatedQuestions.every(q=>inScope(scope,q));

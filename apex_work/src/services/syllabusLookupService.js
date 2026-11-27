@@ -9,6 +9,7 @@ const programmeKey = value => {
 
 export function matchSyllabuses(records, profile) {
  const subjects = new Set((profile.subjects || []).map(clean));
+ if(subjects.size!==4)return [];
  const programme = programmeKey(profile.programme);
  return records.filter(s => programmeKey(s.programme) === programme && subjects.has(clean(s.subject)));
 }

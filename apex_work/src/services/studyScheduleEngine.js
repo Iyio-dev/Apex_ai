@@ -24,7 +24,7 @@ export function scheduleSessions({ sessions, candidates, preferences, start, max
     const week=Math.floor(day/7);
     weekly.set(week,(weekly.get(week)||0)+minutes);
     usedTopics.add(`${day}:${session.topicId}`);
-    const syllabusObjectives=(topic.topic.objectives||[]).slice(0,3);
+    const syllabusObjectives=[...new Set([...(topic.topic.objectives||[]),...(topic.topic.subtopics||[]).flatMap(s=>s.objectives||[])])].slice(0,3);
     const requestedObjectives=Array.isArray(session.objectives)?session.objectives.filter(x=>typeof x==="string"&&x.trim()).slice(0,3):[];
     const objectives=requestedObjectives.length?requestedObjectives:syllabusObjectives;
     activities.push({day,subject:topic.subject,topic:topic.topic._id,title:`Study ${topic.topic.name}`,estimatedMinutes:minutes,priority:["low","medium","high"].includes(session.priority)?session.priority:"medium",personalObjectives:objectives,personalSubtopics:(topic.topic.subtopics||[]).slice(0,4).map(s=>s.name),interestNote:preferences.interestNote||""});

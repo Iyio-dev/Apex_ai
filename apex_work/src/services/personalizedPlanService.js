@@ -15,12 +15,13 @@ export async function planningContext(user){
  const syllabuses=matchSyllabuses(allSyllabuses,profile);
  const map=new Map(progress.map(x=>[String(x.topic),x]));
  const topics=syllabuses.flatMap(s=>s.topics.map(t=>({subject:s.subject,topic:t,progress:map.get(String(t._id)),weak:profile.weaknesses.includes(s.subject)||profile.weaknesses.includes(t.name)})));
- return {profile,topics,summary:{syllabusDiagnostics:syllabusDiagnostics(allSyllabuses,profile),programme:profile.programme,subjects:profile.subjects,goal:profile.goal,examDate:profile.examDate,weeklyHours:profile.weeklyHours,strengths:profile.strengths,weaknesses:profile.weaknesses,topics:topics.map(t=>({id:String(t.topic._id),subject:t.subject,name:t.topic.name,understanding:t.progress?.understanding??null,covered:t.topic.lectureCovered??false,predictedNext:t.topic.predictedNext??false,difficulty:t.topic.difficulty,estimatedHours:t.topic.estimatedHours,subtopics:(t.topic.subtopics||[]).map(s=>s.name),objectives:t.topic.objectives||[],weak:t.weak}))}};
+ return {profile,topics,summary:{syllabusDiagnostics:syllabusDiagnostics(syllabuses,profile),programme:profile.programme,subjects:profile.subjects,goal:profile.goal,examDate:profile.examDate,weeklyHours:profile.weeklyHours,strengths:profile.strengths,weaknesses:profile.weaknesses,topics:topics.map(t=>({id:String(t.topic._id),subject:t.subject,name:t.topic.name,understanding:t.progress?.understanding??null,covered:t.topic.lectureCovered??false,predictedNext:t.topic.predictedNext??false,difficulty:t.topic.difficulty,estimatedHours:t.topic.estimatedHours,subtopics:(t.topic.subtopics||[]).map(s=>s.name),objectives:t.topic.objectives||[],weak:t.weak}))}};
 }
 
 export async function createPersonalizedPlan(user,preferences){
  const {profile,topics}=await planningContext(user);
  if(!topics.length)throw new AppError("No syllabus topics available for your subjects",409,"SYLLABUS_REQUIRED");
+ if(preferences.focusSubjects?.some(s=>!profile.subjects.includes(s))||preferences.focusTopicIds?.some(id=>!topics.some(t=>String(t.topic._id)===id)))throw new AppError("Choose topics from your four subjects",403);
  const candidates=topics.filter(t=>(!preferences.focusSubjects?.length||preferences.focusSubjects.includes(t.subject))&&(!preferences.focusTopicIds?.length||preferences.focusTopicIds.includes(String(t.topic._id))));
  if(!candidates.length)throw new AppError("No matching topics",409,"NO_TOPICS");
  const requestedMinutes=preferences.minutesPerDay;

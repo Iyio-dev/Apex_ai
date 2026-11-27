@@ -8,11 +8,7 @@ const generateToken = (user) => {
   const secret = process.env.JWT_SECRET;
   if (!secret) throw new Error("JWT_SECRET is missing from the environment.");
 
-  return jwt.sign(
-    { id: user._id.toString(), version: user.tokenVersion ?? 0 },
-    secret,
-    { expiresIn: "7d", algorithm: "HS256" }
-  );
+  return jwt.sign({ id: user._id.toString(), version: user.tokenVersion ?? 0 }, secret, { expiresIn: "7d", algorithm: "HS256" });
 };
 
 const publicUser = (user) => ({
@@ -23,27 +19,24 @@ const publicUser = (user) => ({
   createdAt: user.createdAt,
 });
 
-const isProduction = process.env.NODE_ENV === "production";
-
-const sessionCookieOptions = () => ({
-  httpOnly: true,
-  secure: isProduction,
-  sameSite: isProduction ? "none" : "lax",
-  path: "/",
-});
-
 const setSession = (res, token) =>
   res.cookie("apex_session", token, {
-    ...sessionCookieOptions(),
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
+    path: "/",
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
-
 export const logout = asyncHandler(async (req, res) => {
   await User.updateOne({ _id: req.user._id }, { $inc: { tokenVersion: 1 } });
-  res.clearCookie("apex_session", sessionCookieOptions());
+  res.clearCookie("apex_session", {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
+    path: "/",
+  });
   res.json({ success: true, message: "Signed out" });
 });
-
 export const register = asyncHandler(async (req, res) => {
   const { name, email, password, bio } = req.body;
   const existingUser = await User.findOne({ email });

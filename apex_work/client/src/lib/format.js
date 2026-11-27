@@ -1,4 +1,4 @@
-export const subjects = ["Mathematics", "Physics", "Chemistry", "Biology"];
+export const subjects = ["Mathematics", "Chemistry", "Physics", "Biology", "Agricultural Science", "Geography", "Business Studies", "Economics", "Accounting", "Government", "Christian Religious Studies", "French", "History", "Islamic Studies", "Literature-in-English", "Music", "Visual Arts", "Igbo", "Yoruba"];
 export const dateISO = (value) => {
   if (typeof value === "string" && /^\d{4}-\d{2}-\d{2}/.test(value)) return value.slice(0, 10);
   const date = new Date(value);
