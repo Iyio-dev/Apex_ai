@@ -10,8 +10,9 @@ export default function Admin() {
   if (loading && allowed === null) return <ApexLoader message="Checking editor access" />;
   if (allowed === false) return <div className="panel max-w-2xl">
     <ShieldCheck className="mb-3 text-rose-600" size={28}/>
-    <h2 className="heading">Admin access required</h2>
-    <p className="muted mt-2">Sign in with a content editor or administrator account to manage the syllabus.</p>
+    <h2 className="heading">Unable to open admin dashboard</h2>
+    <p className="muted mt-2">{error || "Sign in with a content editor or administrator account to manage the syllabus."}</p>
+    <button type="button" className="mt-4 text-indigo-600 font-semibold" onClick={load}>Retry access</button>
     <p className="mt-4"><a className="text-indigo-600 font-semibold" href="/">Return to student dashboard</a></p>
   </div>;
 

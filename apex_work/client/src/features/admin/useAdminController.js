@@ -18,7 +18,7 @@ export function useAdminController() {
   const [success, setSuccess] = useState("");
 
   const load = useCallback(async () => {
-    setLoading(true); setError("");
+    setLoading(true); setError(""); setAllowed(null);
     try {
       await api("/academic/admin/access");
       setAllowed(true);
@@ -30,7 +30,7 @@ export function useAdminController() {
       setQuestions(qs?.results || []);
       setQuestionTotal(qs?.pagination?.total ?? qs?.results?.length ?? 0);
     } catch (e) {
-      if (e?.status === 403 || e?.status === 401) setAllowed(false);
+      setAllowed(false);
       setError(errorText(e));
     } finally { setLoading(false); }
   }, []);
