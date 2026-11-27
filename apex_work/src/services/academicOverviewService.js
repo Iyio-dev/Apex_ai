@@ -1,3 +1,4 @@
+import {coveredProfileTopics} from "./curriculumScope.js";
 import {scopedPlan,scopedAssessment} from "./studentScope.js";
 import {findStudentSyllabuses, matchSyllabuses} from "./syllabusLookupService.js";
 import {providerFailureKind,rateLimitError} from '../utils/aiFailure.js';
@@ -27,9 +28,10 @@ export async function getOverviewContext(user){
  const [progress,assessments,plans,syllabuses] = await Promise.all([
   TopicProgress.find({user}).lean(),Assessment.find({user,submittedAt:{$exists:true}}).sort({submittedAt:-1}).limit(12).lean(),StudyPlan.find({user}).sort({createdAt:-1}).limit(3).lean(),findStudentSyllabuses(profile)
  ]);
+ for(const s of syllabuses) s.topics=s.topics.filter(t=>t.lectureCovered===true);
  const topicNames=new Map(syllabuses.flatMap(s=>s.topics.map(t=>[String(t._id),`${s.subject}: ${t.name}`])));
  const scope={topics:new Map(syllabuses.flatMap(s=>s.topics.map(t=>[String(t._id),s.subject])))};
- const context={profile:{programme:profile.programme,subjects:profile.subjects,goal:profile.goal,examDate:profile.examDate,weeklyHours:profile.weeklyHours,strengths:profile.strengths,weaknesses:profile.weaknesses},topicProgress:progress.filter(p=>topicNames.has(String(p.topic))).map(p=>({topic:topicNames.get(String(p.topic)),understanding:p.understanding,lectureCovered:p.lectureCovered})).slice(0,100),assessmentHistory:assessments.filter(a=>scopedAssessment(scope,a)).map(a=>({day:a.day,score:a.score,total:a.generatedQuestions?.length || a.questionIds?.length || 0})),plans:plans.map(p=>scopedPlan(scope,p)).map(p=>({name:p.name,source:p.source,activities:p.activities.length,completed:p.activities.filter(a=>a.status==='completed').length,skipped:p.activities.filter(a=>a.status==='skipped').length})),syllabusTopicCount:topicNames.size};
+ const context={profile:{programme:profile.programme,subjects:profile.subjects,goal:profile.goal,examDate:profile.examDate,weeklyHours:profile.weeklyHours,strengths:coveredProfileTopics(syllabuses,profile.strengths),weaknesses:coveredProfileTopics(syllabuses,profile.weaknesses)},topicProgress:progress.filter(p=>topicNames.has(String(p.topic))).map(p=>({topic:topicNames.get(String(p.topic)),understanding:p.understanding,lectureCovered:p.lectureCovered})).slice(0,100),assessmentHistory:assessments.filter(a=>scopedAssessment(scope,a)).map(a=>({day:a.day,score:a.score,total:a.generatedQuestions?.length || a.questionIds?.length || 0})),plans:plans.map(p=>scopedPlan(scope,p)).map(p=>({name:p.name,source:p.source,activities:p.activities.length,completed:p.activities.filter(a=>a.status==='completed').length,skipped:p.activities.filter(a=>a.status==='skipped').length})),syllabusTopics:syllabuses.flatMap(s=>s.topics.map(t=>({subject:s.subject,name:t.name,courseCode:t.courseCode,objectives:t.objectives||[],understanding:progress.find(p=>String(p.topic)===String(t._id))?.understanding??null}))),syllabusTopicCount:topicNames.size};
  return {context,questions};
 }
 export async function latestOverview(user){const profile=await AcademicProfile.findOne({user}).lean();const latest=await AcademicOverview.findOne({user}).sort({createdAt:-1}).lean();return latest&&profile&&JSON.stringify([...(latest.contextSnapshot?.profile?.subjects||[])].sort())===JSON.stringify([...profile.subjects].sort())?latest:null;}

@@ -55,8 +55,7 @@ export function Syllabus() {
       ) : records.filter((s) => selected === "All" || s.subject === selected)
           .length === 0 ? (
         <div className="panel">
-          No syllabus content yet. An administrator must seed the verified OAU
-          JUPEB syllabus.
+          No eligible syllabus content. Confirm your four saved subjects and lecturer coverage with your administrator.
         </div>
       ) : (
         records
@@ -65,15 +64,16 @@ export function Syllabus() {
             <section className="mb-6" key={s._id}>
               <h3 className="font-bold text-xl mb-3">{s.subject}</h3>
               <div className="space-y-5">
-                {["001", "002", "003", "004"].map(course => {
+                {["001", "002", "003", "004", "Unassigned"].map(course => {
                   const group = (s.topics || []).filter(t => {
                     const code = String(t.courseCode || t.course || "").toUpperCase();
                     const match = code.match(/(?:^|\D)(?:00|O|0)([1-4])(?:\D|$)/);
-                    return t.lectureCovered === true && match?.[1] === course.slice(-1);
+                    return t.lectureCovered === true && (course === "Unassigned" ? !match : match?.[1] === course.slice(-1));
                   });
                   
+                  if(course === "Unassigned" && !group.length) return null;
                   return <div key={course} className="space-y-3">
-                    <h4 className="font-bold text-lg">{`O${course.slice(-1)}`}</h4>
+                    <h4 className="font-bold text-lg">{course === "Unassigned" ? "Course code pending — ask your lecturer" : `O${course.slice(-1)} · ${course}`}</h4>
                     {!group.length && <p className="muted">No lecturer-covered topics yet.</p>}
                     {group.map((t) => {
                   const x = map.get(String(t._id));

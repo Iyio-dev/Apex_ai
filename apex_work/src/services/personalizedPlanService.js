@@ -1,3 +1,4 @@
+import {coveredProfileTopics} from "./curriculumScope.js";
 import {matchSyllabuses, syllabusDiagnostics} from "./syllabusLookupService.js";
 import Syllabus from "../models/Syllabus.js";
 import AcademicProfile from "../models/AcademicProfile.js";
@@ -13,9 +14,11 @@ export async function planningContext(user){
  if(!profile)throw new AppError("Complete your academic profile first",400,"PROFILE_REQUIRED");
  const [progress,allSyllabuses]=await Promise.all([TopicProgress.find({user}),Syllabus.find().lean()]);
  const syllabuses=matchSyllabuses(allSyllabuses,profile);
+ profile.strengths=coveredProfileTopics(syllabuses,profile.strengths);
+ profile.weaknesses=coveredProfileTopics(syllabuses,profile.weaknesses);
  const map=new Map(progress.map(x=>[String(x.topic),x]));
- const topics=syllabuses.flatMap(s=>s.topics.map(t=>({subject:s.subject,topic:t,progress:map.get(String(t._id)),weak:profile.weaknesses.includes(s.subject)||profile.weaknesses.includes(t.name)})));
- return {profile,topics,summary:{syllabusDiagnostics:syllabusDiagnostics(syllabuses,profile),programme:profile.programme,subjects:profile.subjects,goal:profile.goal,examDate:profile.examDate,weeklyHours:profile.weeklyHours,strengths:profile.strengths,weaknesses:profile.weaknesses,topics:topics.map(t=>({id:String(t.topic._id),subject:t.subject,name:t.topic.name,understanding:t.progress?.understanding??null,covered:t.topic.lectureCovered??false,predictedNext:t.topic.predictedNext??false,difficulty:t.topic.difficulty,estimatedHours:t.topic.estimatedHours,subtopics:(t.topic.subtopics||[]).map(s=>s.name),objectives:t.topic.objectives||[],weak:t.weak}))}};
+ const topics=syllabuses.flatMap(s=>s.topics.filter(t=>t.lectureCovered===true).map(t=>({subject:s.subject,topic:t,progress:map.get(String(t._id)),weak:profile.weaknesses.includes(s.subject)||profile.weaknesses.includes(t.name)})));
+ return {profile,topics,summary:{syllabusDiagnostics:syllabusDiagnostics(allSyllabuses,profile),programme:profile.programme,subjects:profile.subjects,goal:profile.goal,examDate:profile.examDate,weeklyHours:profile.weeklyHours,strengths:profile.strengths,weaknesses:profile.weaknesses,topics:topics.map(t=>({id:String(t.topic._id),subject:t.subject,name:t.topic.name,understanding:t.progress?.understanding??null,covered:t.topic.lectureCovered??false,predictedNext:t.topic.predictedNext??false,difficulty:t.topic.difficulty,estimatedHours:t.topic.estimatedHours,subtopics:(t.topic.subtopics||[]).map(s=>s.name),objectives:t.topic.objectives||[],weak:t.weak}))}};
 }
 
 export async function createPersonalizedPlan(user,preferences){

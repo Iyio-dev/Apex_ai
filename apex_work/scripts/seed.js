@@ -30,7 +30,7 @@ async function seed() {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log(`Connected to database: ${mongoose.connection.name}`);
     await Syllabus.init();
-    let inserted = 0, skipped = 0;
+    let inserted = 0, skipped = 0, unresolved = 0;
     for (const record of records) {
       const filter = { programme: record.programme, subject: record.subject };
       const existing = (await Syllabus.find({subject:record.subject}).collation({locale:"en",strength:2})).find(s=>/\bjupeb\b/i.test(s.programme));
@@ -39,8 +39,21 @@ async function seed() {
         const key = value => String(value).trim().toLowerCase();
         for (const incoming of record.topics) {
           const matches = existing.topics.filter(t => key(t.name) === key(incoming.name));
-          if (matches.length > 1) throw new Error(`Ambiguous topic: ${incoming.name}`);
-          const topic = matches[0];
+          const exact = matches.filter(t => key(t.courseCode || '') === key(incoming.courseCode));
+          const legacy = matches.filter(t => !t.courseCode);
+          // Only infer a legacy course from unique matching subtopic evidence.
+          const candidates = legacy.filter(t => {
+            const names = new Set((t.subtopics || []).map(s => key(s.name)));
+            const possible = record.topics.filter(r => key(r.name) === key(t.name) && (r.subtopics || []).some(s => names.has(key(s.name))));
+            return possible.length === 1 && key(possible[0].courseCode) === key(incoming.courseCode);
+          });
+          const repeated = record.topics.filter(t => key(t.name) === key(incoming.name)).length > 1;
+          if (exact.length > 1 || (!exact.length && legacy.length && (repeated || legacy.length > 1) && candidates.length !== 1)) {
+            unresolved++;
+            console.warn(`Skipped ambiguous topic: ${record.subject} / ${incoming.courseCode} / ${incoming.name}; existing IDs preserved`);
+            continue;
+          }
+          const topic = exact[0] || candidates[0] || (!repeated && legacy.length === 1 ? legacy[0] : undefined);
           if (!topic) { existing.topics.push(incoming); continue; }
           if (!topic.courseCode) topic.courseCode = incoming.courseCode;
           if (!topic.courseTitle) topic.courseTitle = incoming.courseTitle;
@@ -64,7 +77,7 @@ async function seed() {
         console.log(`Skipped duplicate: ${record.subject}`);
       }
     }
-    console.log(`Finished: ${inserted} inserted, ${skipped} existing/merged.`);
+    console.log(`Finished: ${inserted} inserted, ${skipped} existing/merged, ${unresolved} unresolved topics.`);
   } catch (error) {
     console.error('Seed failed:', error.message);
     process.exitCode = 1;

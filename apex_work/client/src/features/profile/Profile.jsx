@@ -10,7 +10,7 @@ import { Notice } from "../../components/ui/Notice";
 import { subjects, dateISO, prettyDate, cls } from "../../lib/format";
 export function Profile() {
   const { data, loading, refresh } = useLoad("/academic/profile"),
-    { data: syllabusRecords, refresh: refreshSyllabuses } = useLoad("/academic/syllabuses"),
+    [syllabusRecords, setSyllabusRecords] = useState([]),
     [form, setForm] = useState({
       programme: "OAU JUPEB",
       subjects: [],
@@ -33,8 +33,14 @@ export function Profile() {
         weaknesses: data.weaknesses || [],
       });
   }, [data]);
+  useEffect(() => {
+    let active = true;
+    setSyllabusRecords([]);
+    if (form.subjects.length === 4) api("/academic/syllabuses/preview", {method:"POST",body:{programme:form.programme,subjects:form.subjects}}).then(rows=>{if(active)setSyllabusRecords(rows);}).catch(e=>{if(active)setError(errorText(e));});
+    return ()=>{active=false;};
+  }, [form.programme, form.subjects]);
   const availableTopics = (Array.isArray(syllabusRecords) ? syllabusRecords : [])
-    .flatMap(s => (s.topics || []).map(t => ({ id: t._id, name: t.name, subject: s.subject })));
+    .flatMap(s => (s.topics || []).filter(t => t.lectureCovered === true).map(t => ({ id: t._id, name: t.name, subject: s.subject })));
   const update = (k, v) => setForm((f) => ({ ...f, [k]: v }));
   const save = async (e) => {
     e.preventDefault();
@@ -55,7 +61,7 @@ export function Profile() {
       });
       setSuccess("Profile saved.");
       refresh();
-      refreshSyllabuses();
+
     } catch (e) {
       setError(errorText(e));
     } finally {
@@ -133,7 +139,7 @@ export function Profile() {
           {["strengths", "weaknesses"].map(field => (
             <fieldset key={field}>
               <legend className="font-medium text-sm mb-2">{field === "strengths" ? "Strong topics" : "Weak topics"}</legend>
-              <p className="muted text-sm mb-2">Select syllabus topics instead of typing them.</p>
+              <p className="muted text-sm mb-2">Select only topics your lecturer has covered.</p>
               <div className="max-h-56 overflow-y-auto grid sm:grid-cols-2 gap-2">
                 {availableTopics.filter(t => form.subjects.includes(t.subject)).map(t => (
                   <label key={t.id} className="flex gap-2 items-start text-sm">
@@ -143,7 +149,7 @@ export function Profile() {
                   </label>
                 ))}
               </div>
-              {!availableTopics.length && <p className="muted text-sm">No syllabus topics available.</p>}
+              {!availableTopics.length && <p className="muted text-sm">{form.subjects.length !== 4 ? "Select four subjects first." : "No lecturer-covered topics available for your selection yet."}</p>}
             </fieldset>
           ))}
           <button className="btn" disabled={busy || form.subjects.length !== 4}>

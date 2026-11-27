@@ -22,7 +22,7 @@ export function selectDailyTopics({profile,syllabuses,progress,plans},limit=5){
   lectureCovered:t.lectureCovered,progress:progressMap.get(id(t._id)),inPlan:planned.has(id(t._id)),
   weak:(profile.weaknesses||[]).some(w=>[s.subject,t.name].some(n=>n.toLowerCase()===String(w).toLowerCase()))
  })));
- const eligible=topics;
+ const eligible=topics.filter(t=>t.lectureCovered===true);
  eligible.sort((a,b)=>score(b)-score(a));
  return eligible.slice(0,limit);
  function score(t){return (t.weak?8:0)+(t.inPlan?6:0)+(t.lectureCovered?3:0)+(t.progress?.understanding>0?(6-t.progress.understanding)*2:0);}

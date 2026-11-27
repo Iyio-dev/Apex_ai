@@ -21,6 +21,7 @@ r.get("/profile",handle(req=>s.profile(u(req))));r.put("/profile",validate(v.pro
 r.get("/overview/context",handle(req=>getOverviewContext(u(req))));r.get("/overview/latest",handle(req=>latestOverview(u(req))));r.post("/overview/generate",aiLimiter,validate(answersSchema),handle(req=>generateOverview(u(req),req.body,req.id),201));
 r.get("/admin/syllabuses",editor,handle(req=>s.syllabuses(u(req),true)));
 r.get("/syllabuses",handle(req=>s.syllabuses(u(req))));r.post("/syllabuses",editor,validate(v.syllabusSchema),handle(req=>s.saveSyllabus(req.body),201));
+r.post("/syllabuses/preview",validate(v.profileSchema),handle(req=>s.previewSyllabuses(req.body)));
 r.get("/syllabuses/:id",handle(req=>s.getSyllabus(req.params.id,u(req),isEditor(req))));r.patch("/syllabuses/:id",editor,validate(v.syllabusSchema.partial()),handle(req=>s.updateSyllabus(req.params.id,req.body)));r.delete("/syllabuses/:id",editor,handle(req=>s.deleteSyllabus(req.params.id)));
 r.get("/progress",handle(req=>s.progress(u(req))));r.put("/progress/:topicId",validate(v.progressSchema),handle(req=>s.setProgress(u(req),req.params.topicId,req.body)));
 r.get("/plans/context",handle(req=>planningContext(u(req)).then(x=>x.summary)));r.post("/plans/ai-generate",generationLimiter,validate(v.aiPlanSchema),handle(req=>createPersonalizedPlan(u(req),req.body),201));
