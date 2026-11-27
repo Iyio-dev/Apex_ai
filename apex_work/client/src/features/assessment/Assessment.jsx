@@ -4,6 +4,7 @@ import { ApexLoader } from "../../components/ui/ApexLoader";
 import React, { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { api, errorText } from "../../api";
+import cls from "../../lib/format";
 import { useLoad } from "../../hooks/useLoad";
 import { Header } from "../../components/ui/Header";
 import { Notice } from "../../components/ui/Notice";
